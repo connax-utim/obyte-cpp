@@ -1,0 +1,56 @@
+/home/tl/Apps/clion-2018.3.4/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/tl/esp/obyte-cpp
+CMake Warning at /home/tl/Apps/clion-2018.3.4/bin/cmake/linux/share/cmake-3.13/Modules/FindBoost.cmake:880 (message):
+  New Boost version may have incorrect or missing dependencies and imported
+  targets
+Call Stack (most recent call first):
+  /home/tl/Apps/clion-2018.3.4/bin/cmake/linux/share/cmake-3.13/Modules/FindBoost.cmake:1002 (_Boost_COMPONENT_DEPENDENCIES)
+  /home/tl/Apps/clion-2018.3.4/bin/cmake/linux/share/cmake-3.13/Modules/FindBoost.cmake:1670 (_Boost_MISSING_DEPENDENCIES)
+  CMakeLists.txt:7 (FIND_PACKAGE)
+
+
+CMake Warning at /home/tl/Apps/clion-2018.3.4/bin/cmake/linux/share/cmake-3.13/Modules/FindBoost.cmake:880 (message):
+  New Boost version may have incorrect or missing dependencies and imported
+  targets
+Call Stack (most recent call first):
+  /home/tl/Apps/clion-2018.3.4/bin/cmake/linux/share/cmake-3.13/Modules/FindBoost.cmake:1002 (_Boost_COMPONENT_DEPENDENCIES)
+  /home/tl/Apps/clion-2018.3.4/bin/cmake/linux/share/cmake-3.13/Modules/FindBoost.cmake:1670 (_Boost_MISSING_DEPENDENCIES)
+  CMakeLists.txt:7 (FIND_PACKAGE)
+
+
+CMake Warning at /home/tl/Apps/clion-2018.3.4/bin/cmake/linux/share/cmake-3.13/Modules/FindBoost.cmake:880 (message):
+  New Boost version may have incorrect or missing dependencies and imported
+  targets
+Call Stack (most recent call first):
+  /home/tl/Apps/clion-2018.3.4/bin/cmake/linux/share/cmake-3.13/Modules/FindBoost.cmake:1002 (_Boost_COMPONENT_DEPENDENCIES)
+  /home/tl/Apps/clion-2018.3.4/bin/cmake/linux/share/cmake-3.13/Modules/FindBoost.cmake:1670 (_Boost_MISSING_DEPENDENCIES)
+  CMakeLists.txt:7 (FIND_PACKAGE)
+
+
+CMake Warning at /home/tl/Apps/clion-2018.3.4/bin/cmake/linux/share/cmake-3.13/Modules/FindBoost.cmake:880 (message):
+  New Boost version may have incorrect or missing dependencies and imported
+  targets
+Call Stack (most recent call first):
+  /home/tl/Apps/clion-2018.3.4/bin/cmake/linux/share/cmake-3.13/Modules/FindBoost.cmake:1002 (_Boost_COMPONENT_DEPENDENCIES)
+  /home/tl/Apps/clion-2018.3.4/bin/cmake/linux/share/cmake-3.13/Modules/FindBoost.cmake:1670 (_Boost_MISSING_DEPENDENCIES)
+  CMakeLists.txt:7 (FIND_PACKAGE)
+
+
+CMake Warning at /home/tl/Apps/clion-2018.3.4/bin/cmake/linux/share/cmake-3.13/Modules/FindBoost.cmake:880 (message):
+  New Boost version may have incorrect or missing dependencies and imported
+  targets
+Call Stack (most recent call first):
+  /home/tl/Apps/clion-2018.3.4/bin/cmake/linux/share/cmake-3.13/Modules/FindBoost.cmake:1002 (_Boost_COMPONENT_DEPENDENCIES)
+  /home/tl/Apps/clion-2018.3.4/bin/cmake/linux/share/cmake-3.13/Modules/FindBoost.cmake:1670 (_Boost_MISSING_DEPENDENCIES)
+  CMakeLists.txt:7 (FIND_PACKAGE)
+
+
+-- Boost version: 1.70.0
+-- Found the following Boost libraries:
+--   thread
+--   system
+--   chrono
+--   date_time
+--   atomic
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/tl/esp/obyte-cpp/cmake-build-debug

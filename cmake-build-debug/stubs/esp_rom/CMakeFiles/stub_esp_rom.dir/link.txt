@@ -1,0 +1,2 @@
+/usr/bin/ar qc libstub_esp_rom.a  CMakeFiles/stub_esp_rom.dir/esp_rom.c.o
+/usr/bin/ranlib libstub_esp_rom.a

@@ -1,0 +1,1383 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="obyte_cpp"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\stubs\;CMake Files\stubs\esp32\;CMake Files\stubs\freertos\;CMake Files\stubs\spi_flash\;CMake Files\stubs\xtensa\;CMake Files\stubs\soc\;CMake Files\stubs\log\;CMake Files\stubs\newlib\;CMake Files\stubs\heap\;CMake Files\stubs\esp_rom\;CMake Files\stubs\esp_common\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/tl/esp/obyte-cpp/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/tl/esp/obyte-cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/tl/esp/obyte-cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/tl/esp/obyte-cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/tl/esp/obyte-cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/tl/esp/obyte-cpp/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/tl/esp/obyte-cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/tl/esp/obyte-cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/tl/esp/obyte-cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/tl/esp/obyte-cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="obyte_cpp.elf">
+				<Option output="/home/tl/esp/obyte-cpp/cmake-build-debug/obyte_cpp.elf" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/tl/esp/obyte-cpp/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/tl/esp/obyte-cpp/src"/>
+					<Add directory="/home/tl/esp/obyte-cpp/src/lib"/>
+					<Add directory="/home/tl/esp/obyte-cpp/src/lib/micro-ecc"/>
+					<Add directory="/home/tl/esp/obyte-cpp/src/lib/utility"/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/freertos/."/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/freertos/freertos"/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/soc/."/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/soc/include"/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/soc/esp32/include"/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/log/."/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/log/include"/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/newlib/."/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/newlib/include"/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/heap/."/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/heap/include"/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/esp32/."/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/esp32/include"/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/spi_flash/."/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/xtensa/."/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/xtensa/include"/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/xtensa/esp32/include"/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/esp_rom/."/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/esp_rom/include"/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/esp_common/."/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/esp_common/include"/>
+					<Add directory="/usr/local/boost_1_70_0"/>
+					<Add directory="/usr/include/c++/8"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/8"/>
+					<Add directory="/usr/include/c++/8/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/tl/esp/obyte-cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 obyte_cpp.elf"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/tl/esp/obyte-cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/tl/esp/obyte-cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/tl/esp/obyte-cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="obyte_cpp.elf/fast">
+				<Option output="/home/tl/esp/obyte-cpp/cmake-build-debug/obyte_cpp.elf" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/tl/esp/obyte-cpp/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/tl/esp/obyte-cpp/src"/>
+					<Add directory="/home/tl/esp/obyte-cpp/src/lib"/>
+					<Add directory="/home/tl/esp/obyte-cpp/src/lib/micro-ecc"/>
+					<Add directory="/home/tl/esp/obyte-cpp/src/lib/utility"/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/freertos/."/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/freertos/freertos"/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/soc/."/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/soc/include"/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/soc/esp32/include"/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/log/."/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/log/include"/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/newlib/."/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/newlib/include"/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/heap/."/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/heap/include"/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/esp32/."/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/esp32/include"/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/spi_flash/."/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/xtensa/."/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/xtensa/include"/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/xtensa/esp32/include"/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/esp_rom/."/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/esp_rom/include"/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/esp_common/."/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/esp_common/include"/>
+					<Add directory="/usr/local/boost_1_70_0"/>
+					<Add directory="/usr/include/c++/8"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/8"/>
+					<Add directory="/usr/include/c++/8/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/tl/esp/obyte-cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 obyte_cpp.elf/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/tl/esp/obyte-cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/tl/esp/obyte-cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/tl/esp/obyte-cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/tl/esp/obyte-cpp/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/tl/esp/obyte-cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/tl/esp/obyte-cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/tl/esp/obyte-cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/tl/esp/obyte-cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="stub_esp32">
+				<Option output="/home/tl/esp/obyte-cpp/cmake-build-debug/stubs/esp32/libstub_esp32.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/tl/esp/obyte-cpp/cmake-build-debug/stubs/esp32"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/esp32/."/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/esp32/include"/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/soc/."/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/soc/include"/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/soc/esp32/include"/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/log/."/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/log/include"/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/freertos/."/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/freertos/freertos"/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/newlib/."/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/newlib/include"/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/heap/."/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/heap/include"/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/xtensa/."/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/xtensa/include"/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/xtensa/esp32/include"/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/esp_rom/."/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/esp_rom/include"/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/esp_common/."/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/esp_common/include"/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/spi_flash/."/>
+					<Add directory="/usr/include/c++/8"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/8"/>
+					<Add directory="/usr/include/c++/8/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/tl/esp/obyte-cpp/cmake-build-debug/stubs/esp32/Makefile&quot;  VERBOSE=1 stub_esp32"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/tl/esp/obyte-cpp/cmake-build-debug/stubs/esp32/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/tl/esp/obyte-cpp/cmake-build-debug/stubs/esp32/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/tl/esp/obyte-cpp/cmake-build-debug/stubs/esp32/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="stub_esp32/fast">
+				<Option output="/home/tl/esp/obyte-cpp/cmake-build-debug/stubs/esp32/libstub_esp32.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/tl/esp/obyte-cpp/cmake-build-debug/stubs/esp32"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/esp32/."/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/esp32/include"/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/soc/."/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/soc/include"/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/soc/esp32/include"/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/log/."/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/log/include"/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/freertos/."/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/freertos/freertos"/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/newlib/."/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/newlib/include"/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/heap/."/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/heap/include"/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/xtensa/."/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/xtensa/include"/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/xtensa/esp32/include"/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/esp_rom/."/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/esp_rom/include"/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/esp_common/."/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/esp_common/include"/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/spi_flash/."/>
+					<Add directory="/usr/include/c++/8"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/8"/>
+					<Add directory="/usr/include/c++/8/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/tl/esp/obyte-cpp/cmake-build-debug/stubs/esp32/Makefile&quot;  VERBOSE=1 stub_esp32/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/tl/esp/obyte-cpp/cmake-build-debug/stubs/esp32/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/tl/esp/obyte-cpp/cmake-build-debug/stubs/esp32/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/tl/esp/obyte-cpp/cmake-build-debug/stubs/esp32/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="stub_freertos">
+				<Option output="/home/tl/esp/obyte-cpp/cmake-build-debug/stubs/freertos/libstub_freertos.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/tl/esp/obyte-cpp/cmake-build-debug/stubs/freertos"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/freertos/."/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/freertos/freertos"/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/soc/."/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/soc/include"/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/soc/esp32/include"/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/log/."/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/log/include"/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/newlib/."/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/newlib/include"/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/heap/."/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/heap/include"/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/esp32/."/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/esp32/include"/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/xtensa/."/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/xtensa/include"/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/xtensa/esp32/include"/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/esp_rom/."/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/esp_rom/include"/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/esp_common/."/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/esp_common/include"/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/spi_flash/."/>
+					<Add directory="/usr/include/c++/8"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/8"/>
+					<Add directory="/usr/include/c++/8/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/tl/esp/obyte-cpp/cmake-build-debug/stubs/freertos/Makefile&quot;  VERBOSE=1 stub_freertos"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/tl/esp/obyte-cpp/cmake-build-debug/stubs/freertos/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/tl/esp/obyte-cpp/cmake-build-debug/stubs/freertos/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/tl/esp/obyte-cpp/cmake-build-debug/stubs/freertos/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="stub_freertos/fast">
+				<Option output="/home/tl/esp/obyte-cpp/cmake-build-debug/stubs/freertos/libstub_freertos.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/tl/esp/obyte-cpp/cmake-build-debug/stubs/freertos"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/freertos/."/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/freertos/freertos"/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/soc/."/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/soc/include"/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/soc/esp32/include"/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/log/."/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/log/include"/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/newlib/."/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/newlib/include"/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/heap/."/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/heap/include"/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/esp32/."/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/esp32/include"/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/xtensa/."/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/xtensa/include"/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/xtensa/esp32/include"/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/esp_rom/."/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/esp_rom/include"/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/esp_common/."/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/esp_common/include"/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/spi_flash/."/>
+					<Add directory="/usr/include/c++/8"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/8"/>
+					<Add directory="/usr/include/c++/8/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/tl/esp/obyte-cpp/cmake-build-debug/stubs/freertos/Makefile&quot;  VERBOSE=1 stub_freertos/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/tl/esp/obyte-cpp/cmake-build-debug/stubs/freertos/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/tl/esp/obyte-cpp/cmake-build-debug/stubs/freertos/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/tl/esp/obyte-cpp/cmake-build-debug/stubs/freertos/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="stub_xtensa">
+				<Option output="/home/tl/esp/obyte-cpp/cmake-build-debug/stubs/xtensa/libstub_xtensa.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/tl/esp/obyte-cpp/cmake-build-debug/stubs/xtensa"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/xtensa/."/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/xtensa/include"/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/xtensa/esp32/include"/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/soc/."/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/soc/include"/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/soc/esp32/include"/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/log/."/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/log/include"/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/freertos/."/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/freertos/freertos"/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/newlib/."/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/newlib/include"/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/heap/."/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/heap/include"/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/esp32/."/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/esp32/include"/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/esp_rom/."/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/esp_rom/include"/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/esp_common/."/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/esp_common/include"/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/spi_flash/."/>
+					<Add directory="/usr/include/c++/8"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/8"/>
+					<Add directory="/usr/include/c++/8/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/tl/esp/obyte-cpp/cmake-build-debug/stubs/xtensa/Makefile&quot;  VERBOSE=1 stub_xtensa"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/tl/esp/obyte-cpp/cmake-build-debug/stubs/xtensa/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/tl/esp/obyte-cpp/cmake-build-debug/stubs/xtensa/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/tl/esp/obyte-cpp/cmake-build-debug/stubs/xtensa/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="stub_xtensa/fast">
+				<Option output="/home/tl/esp/obyte-cpp/cmake-build-debug/stubs/xtensa/libstub_xtensa.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/tl/esp/obyte-cpp/cmake-build-debug/stubs/xtensa"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/xtensa/."/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/xtensa/include"/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/xtensa/esp32/include"/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/soc/."/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/soc/include"/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/soc/esp32/include"/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/log/."/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/log/include"/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/freertos/."/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/freertos/freertos"/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/newlib/."/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/newlib/include"/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/heap/."/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/heap/include"/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/esp32/."/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/esp32/include"/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/esp_rom/."/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/esp_rom/include"/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/esp_common/."/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/esp_common/include"/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/spi_flash/."/>
+					<Add directory="/usr/include/c++/8"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/8"/>
+					<Add directory="/usr/include/c++/8/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/tl/esp/obyte-cpp/cmake-build-debug/stubs/xtensa/Makefile&quot;  VERBOSE=1 stub_xtensa/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/tl/esp/obyte-cpp/cmake-build-debug/stubs/xtensa/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/tl/esp/obyte-cpp/cmake-build-debug/stubs/xtensa/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/tl/esp/obyte-cpp/cmake-build-debug/stubs/xtensa/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="stub_soc">
+				<Option output="/home/tl/esp/obyte-cpp/cmake-build-debug/stubs/soc/libstub_soc.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/tl/esp/obyte-cpp/cmake-build-debug/stubs/soc"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/soc/."/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/soc/include"/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/soc/esp32/include"/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/log/."/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/log/include"/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/spi_flash/."/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/freertos/."/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/freertos/freertos"/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/newlib/."/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/newlib/include"/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/heap/."/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/heap/include"/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/esp32/."/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/esp32/include"/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/xtensa/."/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/xtensa/include"/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/xtensa/esp32/include"/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/esp_rom/."/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/esp_rom/include"/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/esp_common/."/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/esp_common/include"/>
+					<Add directory="/usr/include/c++/8"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/8"/>
+					<Add directory="/usr/include/c++/8/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/tl/esp/obyte-cpp/cmake-build-debug/stubs/soc/Makefile&quot;  VERBOSE=1 stub_soc"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/tl/esp/obyte-cpp/cmake-build-debug/stubs/soc/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/tl/esp/obyte-cpp/cmake-build-debug/stubs/soc/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/tl/esp/obyte-cpp/cmake-build-debug/stubs/soc/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="stub_soc/fast">
+				<Option output="/home/tl/esp/obyte-cpp/cmake-build-debug/stubs/soc/libstub_soc.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/tl/esp/obyte-cpp/cmake-build-debug/stubs/soc"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/soc/."/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/soc/include"/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/soc/esp32/include"/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/log/."/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/log/include"/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/spi_flash/."/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/freertos/."/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/freertos/freertos"/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/newlib/."/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/newlib/include"/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/heap/."/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/heap/include"/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/esp32/."/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/esp32/include"/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/xtensa/."/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/xtensa/include"/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/xtensa/esp32/include"/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/esp_rom/."/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/esp_rom/include"/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/esp_common/."/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/esp_common/include"/>
+					<Add directory="/usr/include/c++/8"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/8"/>
+					<Add directory="/usr/include/c++/8/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/tl/esp/obyte-cpp/cmake-build-debug/stubs/soc/Makefile&quot;  VERBOSE=1 stub_soc/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/tl/esp/obyte-cpp/cmake-build-debug/stubs/soc/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/tl/esp/obyte-cpp/cmake-build-debug/stubs/soc/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/tl/esp/obyte-cpp/cmake-build-debug/stubs/soc/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="stub_log">
+				<Option output="/home/tl/esp/obyte-cpp/cmake-build-debug/stubs/log/libstub_log.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/tl/esp/obyte-cpp/cmake-build-debug/stubs/log"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/log/."/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/log/include"/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/soc/."/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/soc/include"/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/soc/esp32/include"/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/freertos/."/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/freertos/freertos"/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/newlib/."/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/newlib/include"/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/heap/."/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/heap/include"/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/esp32/."/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/esp32/include"/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/xtensa/."/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/xtensa/include"/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/xtensa/esp32/include"/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/esp_rom/."/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/esp_rom/include"/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/esp_common/."/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/esp_common/include"/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/spi_flash/."/>
+					<Add directory="/usr/include/c++/8"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/8"/>
+					<Add directory="/usr/include/c++/8/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/tl/esp/obyte-cpp/cmake-build-debug/stubs/log/Makefile&quot;  VERBOSE=1 stub_log"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/tl/esp/obyte-cpp/cmake-build-debug/stubs/log/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/tl/esp/obyte-cpp/cmake-build-debug/stubs/log/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/tl/esp/obyte-cpp/cmake-build-debug/stubs/log/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="stub_log/fast">
+				<Option output="/home/tl/esp/obyte-cpp/cmake-build-debug/stubs/log/libstub_log.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/tl/esp/obyte-cpp/cmake-build-debug/stubs/log"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/log/."/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/log/include"/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/soc/."/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/soc/include"/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/soc/esp32/include"/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/freertos/."/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/freertos/freertos"/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/newlib/."/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/newlib/include"/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/heap/."/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/heap/include"/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/esp32/."/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/esp32/include"/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/xtensa/."/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/xtensa/include"/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/xtensa/esp32/include"/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/esp_rom/."/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/esp_rom/include"/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/esp_common/."/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/esp_common/include"/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/spi_flash/."/>
+					<Add directory="/usr/include/c++/8"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/8"/>
+					<Add directory="/usr/include/c++/8/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/tl/esp/obyte-cpp/cmake-build-debug/stubs/log/Makefile&quot;  VERBOSE=1 stub_log/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/tl/esp/obyte-cpp/cmake-build-debug/stubs/log/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/tl/esp/obyte-cpp/cmake-build-debug/stubs/log/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/tl/esp/obyte-cpp/cmake-build-debug/stubs/log/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="stub_newlib">
+				<Option output="/home/tl/esp/obyte-cpp/cmake-build-debug/stubs/newlib/libstub_newlib.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/tl/esp/obyte-cpp/cmake-build-debug/stubs/newlib"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/newlib/."/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/newlib/include"/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/soc/."/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/soc/include"/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/soc/esp32/include"/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/log/."/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/log/include"/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/freertos/."/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/freertos/freertos"/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/heap/."/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/heap/include"/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/esp32/."/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/esp32/include"/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/xtensa/."/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/xtensa/include"/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/xtensa/esp32/include"/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/esp_rom/."/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/esp_rom/include"/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/esp_common/."/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/esp_common/include"/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/spi_flash/."/>
+					<Add directory="/usr/include/c++/8"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/8"/>
+					<Add directory="/usr/include/c++/8/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/tl/esp/obyte-cpp/cmake-build-debug/stubs/newlib/Makefile&quot;  VERBOSE=1 stub_newlib"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/tl/esp/obyte-cpp/cmake-build-debug/stubs/newlib/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/tl/esp/obyte-cpp/cmake-build-debug/stubs/newlib/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/tl/esp/obyte-cpp/cmake-build-debug/stubs/newlib/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="stub_newlib/fast">
+				<Option output="/home/tl/esp/obyte-cpp/cmake-build-debug/stubs/newlib/libstub_newlib.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/tl/esp/obyte-cpp/cmake-build-debug/stubs/newlib"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/newlib/."/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/newlib/include"/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/soc/."/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/soc/include"/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/soc/esp32/include"/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/log/."/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/log/include"/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/freertos/."/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/freertos/freertos"/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/heap/."/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/heap/include"/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/esp32/."/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/esp32/include"/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/xtensa/."/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/xtensa/include"/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/xtensa/esp32/include"/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/esp_rom/."/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/esp_rom/include"/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/esp_common/."/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/esp_common/include"/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/spi_flash/."/>
+					<Add directory="/usr/include/c++/8"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/8"/>
+					<Add directory="/usr/include/c++/8/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/tl/esp/obyte-cpp/cmake-build-debug/stubs/newlib/Makefile&quot;  VERBOSE=1 stub_newlib/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/tl/esp/obyte-cpp/cmake-build-debug/stubs/newlib/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/tl/esp/obyte-cpp/cmake-build-debug/stubs/newlib/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/tl/esp/obyte-cpp/cmake-build-debug/stubs/newlib/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="stub_heap">
+				<Option output="/home/tl/esp/obyte-cpp/cmake-build-debug/stubs/heap/libstub_heap.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/tl/esp/obyte-cpp/cmake-build-debug/stubs/heap"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/heap/."/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/heap/include"/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/soc/."/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/soc/include"/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/soc/esp32/include"/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/log/."/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/log/include"/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/freertos/."/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/freertos/freertos"/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/newlib/."/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/newlib/include"/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/esp32/."/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/esp32/include"/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/xtensa/."/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/xtensa/include"/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/xtensa/esp32/include"/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/esp_rom/."/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/esp_rom/include"/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/esp_common/."/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/esp_common/include"/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/spi_flash/."/>
+					<Add directory="/usr/include/c++/8"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/8"/>
+					<Add directory="/usr/include/c++/8/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/tl/esp/obyte-cpp/cmake-build-debug/stubs/heap/Makefile&quot;  VERBOSE=1 stub_heap"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/tl/esp/obyte-cpp/cmake-build-debug/stubs/heap/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/tl/esp/obyte-cpp/cmake-build-debug/stubs/heap/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/tl/esp/obyte-cpp/cmake-build-debug/stubs/heap/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="stub_heap/fast">
+				<Option output="/home/tl/esp/obyte-cpp/cmake-build-debug/stubs/heap/libstub_heap.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/tl/esp/obyte-cpp/cmake-build-debug/stubs/heap"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/heap/."/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/heap/include"/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/soc/."/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/soc/include"/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/soc/esp32/include"/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/log/."/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/log/include"/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/freertos/."/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/freertos/freertos"/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/newlib/."/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/newlib/include"/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/esp32/."/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/esp32/include"/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/xtensa/."/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/xtensa/include"/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/xtensa/esp32/include"/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/esp_rom/."/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/esp_rom/include"/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/esp_common/."/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/esp_common/include"/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/spi_flash/."/>
+					<Add directory="/usr/include/c++/8"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/8"/>
+					<Add directory="/usr/include/c++/8/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/tl/esp/obyte-cpp/cmake-build-debug/stubs/heap/Makefile&quot;  VERBOSE=1 stub_heap/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/tl/esp/obyte-cpp/cmake-build-debug/stubs/heap/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/tl/esp/obyte-cpp/cmake-build-debug/stubs/heap/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/tl/esp/obyte-cpp/cmake-build-debug/stubs/heap/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="stub_esp_rom">
+				<Option output="/home/tl/esp/obyte-cpp/cmake-build-debug/stubs/esp_rom/libstub_esp_rom.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/tl/esp/obyte-cpp/cmake-build-debug/stubs/esp_rom"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/esp_rom/."/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/esp_rom/include"/>
+					<Add directory="/usr/include/c++/8"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/8"/>
+					<Add directory="/usr/include/c++/8/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/tl/esp/obyte-cpp/cmake-build-debug/stubs/esp_rom/Makefile&quot;  VERBOSE=1 stub_esp_rom"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/tl/esp/obyte-cpp/cmake-build-debug/stubs/esp_rom/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/tl/esp/obyte-cpp/cmake-build-debug/stubs/esp_rom/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/tl/esp/obyte-cpp/cmake-build-debug/stubs/esp_rom/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="stub_esp_rom/fast">
+				<Option output="/home/tl/esp/obyte-cpp/cmake-build-debug/stubs/esp_rom/libstub_esp_rom.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/tl/esp/obyte-cpp/cmake-build-debug/stubs/esp_rom"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/esp_rom/."/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/esp_rom/include"/>
+					<Add directory="/usr/include/c++/8"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/8"/>
+					<Add directory="/usr/include/c++/8/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/tl/esp/obyte-cpp/cmake-build-debug/stubs/esp_rom/Makefile&quot;  VERBOSE=1 stub_esp_rom/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/tl/esp/obyte-cpp/cmake-build-debug/stubs/esp_rom/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/tl/esp/obyte-cpp/cmake-build-debug/stubs/esp_rom/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/tl/esp/obyte-cpp/cmake-build-debug/stubs/esp_rom/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="stub_esp_common">
+				<Option output="/home/tl/esp/obyte-cpp/cmake-build-debug/stubs/esp_common/libstub_esp_common.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/tl/esp/obyte-cpp/cmake-build-debug/stubs/esp_common"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/esp_common/."/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/esp_common/include"/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/soc/."/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/soc/include"/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/soc/esp32/include"/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/log/."/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/log/include"/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/freertos/."/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/freertos/freertos"/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/newlib/."/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/newlib/include"/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/heap/."/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/heap/include"/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/esp32/."/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/esp32/include"/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/xtensa/."/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/xtensa/include"/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/xtensa/esp32/include"/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/esp_rom/."/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/esp_rom/include"/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/spi_flash/."/>
+					<Add directory="/usr/include/c++/8"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/8"/>
+					<Add directory="/usr/include/c++/8/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/tl/esp/obyte-cpp/cmake-build-debug/stubs/esp_common/Makefile&quot;  VERBOSE=1 stub_esp_common"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/tl/esp/obyte-cpp/cmake-build-debug/stubs/esp_common/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/tl/esp/obyte-cpp/cmake-build-debug/stubs/esp_common/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/tl/esp/obyte-cpp/cmake-build-debug/stubs/esp_common/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="stub_esp_common/fast">
+				<Option output="/home/tl/esp/obyte-cpp/cmake-build-debug/stubs/esp_common/libstub_esp_common.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/tl/esp/obyte-cpp/cmake-build-debug/stubs/esp_common"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/esp_common/."/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/esp_common/include"/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/soc/."/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/soc/include"/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/soc/esp32/include"/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/log/."/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/log/include"/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/freertos/."/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/freertos/freertos"/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/newlib/."/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/newlib/include"/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/heap/."/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/heap/include"/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/esp32/."/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/esp32/include"/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/xtensa/."/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/xtensa/include"/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/xtensa/esp32/include"/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/esp_rom/."/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/esp_rom/include"/>
+					<Add directory="/home/tl/esp/obyte-cpp/stubs/spi_flash/."/>
+					<Add directory="/usr/include/c++/8"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/8"/>
+					<Add directory="/usr/include/c++/8/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/tl/esp/obyte-cpp/cmake-build-debug/stubs/esp_common/Makefile&quot;  VERBOSE=1 stub_esp_common/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/tl/esp/obyte-cpp/cmake-build-debug/stubs/esp_common/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/tl/esp/obyte-cpp/cmake-build-debug/stubs/esp_common/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/tl/esp/obyte-cpp/cmake-build-debug/stubs/esp_common/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/tl/esp/obyte-cpp/CMakeLists.txt">
+			<Option target="obyte_cpp.elf"/>
+		</Unit>
+		<Unit filename="/home/tl/esp/obyte-cpp/src/byteduino.cpp">
+			<Option target="obyte_cpp.elf"/>
+		</Unit>
+		<Unit filename="/home/tl/esp/obyte-cpp/src/byteduino.hpp">
+			<Option target="obyte_cpp.elf"/>
+		</Unit>
+		<Unit filename="/home/tl/esp/obyte-cpp/src/communication.cpp">
+			<Option target="obyte_cpp.elf"/>
+		</Unit>
+		<Unit filename="/home/tl/esp/obyte-cpp/src/communication.hpp">
+			<Option target="obyte_cpp.elf"/>
+		</Unit>
+		<Unit filename="/home/tl/esp/obyte-cpp/src/cosigning.cpp">
+			<Option target="obyte_cpp.elf"/>
+		</Unit>
+		<Unit filename="/home/tl/esp/obyte-cpp/src/cosigning.hpp">
+			<Option target="obyte_cpp.elf"/>
+		</Unit>
+		<Unit filename="/home/tl/esp/obyte-cpp/src/definitions.hpp">
+			<Option target="obyte_cpp.elf"/>
+		</Unit>
+		<Unit filename="/home/tl/esp/obyte-cpp/src/hashing.cpp">
+			<Option target="obyte_cpp.elf"/>
+		</Unit>
+		<Unit filename="/home/tl/esp/obyte-cpp/src/hashing.hpp">
+			<Option target="obyte_cpp.elf"/>
+		</Unit>
+		<Unit filename="/home/tl/esp/obyte-cpp/src/hub_challenge.cpp">
+			<Option target="obyte_cpp.elf"/>
+		</Unit>
+		<Unit filename="/home/tl/esp/obyte-cpp/src/hub_challenge.hpp">
+			<Option target="obyte_cpp.elf"/>
+		</Unit>
+		<Unit filename="/home/tl/esp/obyte-cpp/src/key_rotation.cpp">
+			<Option target="obyte_cpp.elf"/>
+		</Unit>
+		<Unit filename="/home/tl/esp/obyte-cpp/src/key_rotation.hpp">
+			<Option target="obyte_cpp.elf"/>
+		</Unit>
+		<Unit filename="/home/tl/esp/obyte-cpp/src/lib/AES.hpp">
+			<Option target="obyte_cpp.elf"/>
+		</Unit>
+		<Unit filename="/home/tl/esp/obyte-cpp/src/lib/AuthenticatedCipher.cpp">
+			<Option target="obyte_cpp.elf"/>
+		</Unit>
+		<Unit filename="/home/tl/esp/obyte-cpp/src/lib/AuthenticatedCipher.hpp">
+			<Option target="obyte_cpp.elf"/>
+		</Unit>
+		<Unit filename="/home/tl/esp/obyte-cpp/src/lib/Base64.cpp">
+			<Option target="obyte_cpp.elf"/>
+		</Unit>
+		<Unit filename="/home/tl/esp/obyte-cpp/src/lib/Base64.hpp">
+			<Option target="obyte_cpp.elf"/>
+		</Unit>
+		<Unit filename="/home/tl/esp/obyte-cpp/src/lib/BlockCipher.cpp">
+			<Option target="obyte_cpp.elf"/>
+		</Unit>
+		<Unit filename="/home/tl/esp/obyte-cpp/src/lib/BlockCipher.hpp">
+			<Option target="obyte_cpp.elf"/>
+		</Unit>
+		<Unit filename="/home/tl/esp/obyte-cpp/src/lib/Cipher.cpp">
+			<Option target="obyte_cpp.elf"/>
+		</Unit>
+		<Unit filename="/home/tl/esp/obyte-cpp/src/lib/Cipher.hpp">
+			<Option target="obyte_cpp.elf"/>
+		</Unit>
+		<Unit filename="/home/tl/esp/obyte-cpp/src/lib/Crypto.cpp">
+			<Option target="obyte_cpp.elf"/>
+		</Unit>
+		<Unit filename="/home/tl/esp/obyte-cpp/src/lib/Crypto.hpp">
+			<Option target="obyte_cpp.elf"/>
+		</Unit>
+		<Unit filename="/home/tl/esp/obyte-cpp/src/lib/GCM.cpp">
+			<Option target="obyte_cpp.elf"/>
+		</Unit>
+		<Unit filename="/home/tl/esp/obyte-cpp/src/lib/GCM.hpp">
+			<Option target="obyte_cpp.elf"/>
+		</Unit>
+		<Unit filename="/home/tl/esp/obyte-cpp/src/lib/GF128.cpp">
+			<Option target="obyte_cpp.elf"/>
+		</Unit>
+		<Unit filename="/home/tl/esp/obyte-cpp/src/lib/GF128.hpp">
+			<Option target="obyte_cpp.elf"/>
+		</Unit>
+		<Unit filename="/home/tl/esp/obyte-cpp/src/lib/GHASH.cpp">
+			<Option target="obyte_cpp.elf"/>
+		</Unit>
+		<Unit filename="/home/tl/esp/obyte-cpp/src/lib/GHASH.hpp">
+			<Option target="obyte_cpp.elf"/>
+		</Unit>
+		<Unit filename="/home/tl/esp/obyte-cpp/src/lib/Hash2.cpp">
+			<Option target="obyte_cpp.elf"/>
+		</Unit>
+		<Unit filename="/home/tl/esp/obyte-cpp/src/lib/Hash2.hpp">
+			<Option target="obyte_cpp.elf"/>
+		</Unit>
+		<Unit filename="/home/tl/esp/obyte-cpp/src/lib/SHA256.cpp">
+			<Option target="obyte_cpp.elf"/>
+		</Unit>
+		<Unit filename="/home/tl/esp/obyte-cpp/src/lib/SHA256.hpp">
+			<Option target="obyte_cpp.elf"/>
+		</Unit>
+		<Unit filename="/home/tl/esp/obyte-cpp/src/lib/byte_order.c">
+			<Option target="obyte_cpp.elf"/>
+		</Unit>
+		<Unit filename="/home/tl/esp/obyte-cpp/src/lib/byte_order.h">
+			<Option target="obyte_cpp.elf"/>
+		</Unit>
+		<Unit filename="/home/tl/esp/obyte-cpp/src/lib/json.hpp">
+			<Option target="obyte_cpp.elf"/>
+		</Unit>
+		<Unit filename="/home/tl/esp/obyte-cpp/src/lib/micro-ecc/test/test_compress.c">
+			<Option target="obyte_cpp.elf"/>
+		</Unit>
+		<Unit filename="/home/tl/esp/obyte-cpp/src/lib/micro-ecc/test/test_compute.c">
+			<Option target="obyte_cpp.elf"/>
+		</Unit>
+		<Unit filename="/home/tl/esp/obyte-cpp/src/lib/micro-ecc/test/test_ecdh.c">
+			<Option target="obyte_cpp.elf"/>
+		</Unit>
+		<Unit filename="/home/tl/esp/obyte-cpp/src/lib/micro-ecc/test/test_ecdsa.c">
+			<Option target="obyte_cpp.elf"/>
+		</Unit>
+		<Unit filename="/home/tl/esp/obyte-cpp/src/lib/micro-ecc/types.h">
+			<Option target="obyte_cpp.elf"/>
+		</Unit>
+		<Unit filename="/home/tl/esp/obyte-cpp/src/lib/micro-ecc/uECC.c">
+			<Option target="obyte_cpp.elf"/>
+		</Unit>
+		<Unit filename="/home/tl/esp/obyte-cpp/src/lib/micro-ecc/uECC.h">
+			<Option target="obyte_cpp.elf"/>
+		</Unit>
+		<Unit filename="/home/tl/esp/obyte-cpp/src/lib/micro-ecc/uECC_vli.h">
+			<Option target="obyte_cpp.elf"/>
+		</Unit>
+		<Unit filename="/home/tl/esp/obyte-cpp/src/lib/ripemd-160.c">
+			<Option target="obyte_cpp.elf"/>
+		</Unit>
+		<Unit filename="/home/tl/esp/obyte-cpp/src/lib/ripemd-160.h">
+			<Option target="obyte_cpp.elf"/>
+		</Unit>
+		<Unit filename="/home/tl/esp/obyte-cpp/src/lib/root_certificates.hpp">
+			<Option target="obyte_cpp.elf"/>
+		</Unit>
+		<Unit filename="/home/tl/esp/obyte-cpp/src/lib/utility/EndianUtil.hpp">
+			<Option target="obyte_cpp.elf"/>
+		</Unit>
+		<Unit filename="/home/tl/esp/obyte-cpp/src/lib/utility/LimbUtil.hpp">
+			<Option target="obyte_cpp.elf"/>
+		</Unit>
+		<Unit filename="/home/tl/esp/obyte-cpp/src/lib/utility/ProgMemUtil.hpp">
+			<Option target="obyte_cpp.elf"/>
+		</Unit>
+		<Unit filename="/home/tl/esp/obyte-cpp/src/lib/utility/RotateUtil.hpp">
+			<Option target="obyte_cpp.elf"/>
+		</Unit>
+		<Unit filename="/home/tl/esp/obyte-cpp/src/lib/websocketclient.cpp">
+			<Option target="obyte_cpp.elf"/>
+		</Unit>
+		<Unit filename="/home/tl/esp/obyte-cpp/src/lib/websocketclient.hpp">
+			<Option target="obyte_cpp.elf"/>
+		</Unit>
+		<Unit filename="/home/tl/esp/obyte-cpp/src/messenger.cpp">
+			<Option target="obyte_cpp.elf"/>
+		</Unit>
+		<Unit filename="/home/tl/esp/obyte-cpp/src/messenger.hpp">
+			<Option target="obyte_cpp.elf"/>
+		</Unit>
+		<Unit filename="/home/tl/esp/obyte-cpp/src/pairing.cpp">
+			<Option target="obyte_cpp.elf"/>
+		</Unit>
+		<Unit filename="/home/tl/esp/obyte-cpp/src/pairing.hpp">
+			<Option target="obyte_cpp.elf"/>
+		</Unit>
+		<Unit filename="/home/tl/esp/obyte-cpp/src/payment.cpp">
+			<Option target="obyte_cpp.elf"/>
+		</Unit>
+		<Unit filename="/home/tl/esp/obyte-cpp/src/payment.hpp">
+			<Option target="obyte_cpp.elf"/>
+		</Unit>
+		<Unit filename="/home/tl/esp/obyte-cpp/src/random_gen.cpp">
+			<Option target="obyte_cpp.elf"/>
+		</Unit>
+		<Unit filename="/home/tl/esp/obyte-cpp/src/random_gen.hpp">
+			<Option target="obyte_cpp.elf"/>
+		</Unit>
+		<Unit filename="/home/tl/esp/obyte-cpp/src/signature.cpp">
+			<Option target="obyte_cpp.elf"/>
+		</Unit>
+		<Unit filename="/home/tl/esp/obyte-cpp/src/signature.hpp">
+			<Option target="obyte_cpp.elf"/>
+		</Unit>
+		<Unit filename="/home/tl/esp/obyte-cpp/src/structures.hpp">
+			<Option target="obyte_cpp.elf"/>
+		</Unit>
+		<Unit filename="/home/tl/esp/obyte-cpp/src/wallet.cpp">
+			<Option target="obyte_cpp.elf"/>
+		</Unit>
+		<Unit filename="/home/tl/esp/obyte-cpp/src/wallet.hpp">
+			<Option target="obyte_cpp.elf"/>
+		</Unit>
+		<Unit filename="/home/tl/esp/obyte-cpp/stubs/esp32/brownout.c">
+			<Option target="stub_esp32"/>
+		</Unit>
+		<Unit filename="/home/tl/esp/obyte-cpp/stubs/esp32/cache_err_int.c">
+			<Option target="stub_esp32"/>
+		</Unit>
+		<Unit filename="/home/tl/esp/obyte-cpp/stubs/esp32/cache_sram_mmu.c">
+			<Option target="stub_esp32"/>
+		</Unit>
+		<Unit filename="/home/tl/esp/obyte-cpp/stubs/esp32/clk.c">
+			<Option target="stub_esp32"/>
+		</Unit>
+		<Unit filename="/home/tl/esp/obyte-cpp/stubs/esp32/cpu_start.c">
+			<Option target="stub_esp32"/>
+		</Unit>
+		<Unit filename="/home/tl/esp/obyte-cpp/stubs/esp32/crosscore_int.c">
+			<Option target="stub_esp32"/>
+		</Unit>
+		<Unit filename="/home/tl/esp/obyte-cpp/stubs/esp32/dport_access.c">
+			<Option target="stub_esp32"/>
+		</Unit>
+		<Unit filename="/home/tl/esp/obyte-cpp/stubs/esp32/dport_panic_highint_hdl.S">
+			<Option target="stub_esp32"/>
+		</Unit>
+		<Unit filename="/home/tl/esp/obyte-cpp/stubs/esp32/esp_adapter.c">
+			<Option target="stub_esp32"/>
+		</Unit>
+		<Unit filename="/home/tl/esp/obyte-cpp/stubs/esp32/esp_himem.c">
+			<Option target="stub_esp32"/>
+		</Unit>
+		<Unit filename="/home/tl/esp/obyte-cpp/stubs/esp32/esp_timer_esp32.c">
+			<Option target="stub_esp32"/>
+		</Unit>
+		<Unit filename="/home/tl/esp/obyte-cpp/stubs/esp32/gdbstub.c">
+			<Option target="stub_esp32"/>
+		</Unit>
+		<Unit filename="/home/tl/esp/obyte-cpp/stubs/esp32/hw_random.c">
+			<Option target="stub_esp32"/>
+		</Unit>
+		<Unit filename="/home/tl/esp/obyte-cpp/stubs/esp32/int_wdt.c">
+			<Option target="stub_esp32"/>
+		</Unit>
+		<Unit filename="/home/tl/esp/obyte-cpp/stubs/esp32/intr_alloc.c">
+			<Option target="stub_esp32"/>
+		</Unit>
+		<Unit filename="/home/tl/esp/obyte-cpp/stubs/esp32/panic.c">
+			<Option target="stub_esp32"/>
+		</Unit>
+		<Unit filename="/home/tl/esp/obyte-cpp/stubs/esp32/pm_esp32.c">
+			<Option target="stub_esp32"/>
+		</Unit>
+		<Unit filename="/home/tl/esp/obyte-cpp/stubs/esp32/pm_trace.c">
+			<Option target="stub_esp32"/>
+		</Unit>
+		<Unit filename="/home/tl/esp/obyte-cpp/stubs/esp32/reset_reason.c">
+			<Option target="stub_esp32"/>
+		</Unit>
+		<Unit filename="/home/tl/esp/obyte-cpp/stubs/esp32/sleep_modes.c">
+			<Option target="stub_esp32"/>
+		</Unit>
+		<Unit filename="/home/tl/esp/obyte-cpp/stubs/esp32/spiram.c">
+			<Option target="stub_esp32"/>
+		</Unit>
+		<Unit filename="/home/tl/esp/obyte-cpp/stubs/esp32/spiram_psram.c">
+			<Option target="stub_esp32"/>
+		</Unit>
+		<Unit filename="/home/tl/esp/obyte-cpp/stubs/esp32/spiram_psram.h">
+			<Option target="stub_esp32"/>
+		</Unit>
+		<Unit filename="/home/tl/esp/obyte-cpp/stubs/esp32/system_api.c">
+			<Option target="stub_esp32"/>
+		</Unit>
+		<Unit filename="/home/tl/esp/obyte-cpp/stubs/esp32/task_wdt.c">
+			<Option target="stub_esp32"/>
+		</Unit>
+		<Unit filename="/home/tl/esp/obyte-cpp/stubs/esp_common/src/dbg_stubs.c">
+			<Option target="stub_esp_common"/>
+		</Unit>
+		<Unit filename="/home/tl/esp/obyte-cpp/stubs/esp_common/src/esp_err_to_name.c">
+			<Option target="stub_esp_common"/>
+		</Unit>
+		<Unit filename="/home/tl/esp/obyte-cpp/stubs/esp_common/src/esp_timer.c">
+			<Option target="stub_esp_common"/>
+		</Unit>
+		<Unit filename="/home/tl/esp/obyte-cpp/stubs/esp_common/src/ets_timer_legacy.c">
+			<Option target="stub_esp_common"/>
+		</Unit>
+		<Unit filename="/home/tl/esp/obyte-cpp/stubs/esp_common/src/freertos_hooks.c">
+			<Option target="stub_esp_common"/>
+		</Unit>
+		<Unit filename="/home/tl/esp/obyte-cpp/stubs/esp_common/src/ipc.c">
+			<Option target="stub_esp_common"/>
+		</Unit>
+		<Unit filename="/home/tl/esp/obyte-cpp/stubs/esp_common/src/pm_locks.c">
+			<Option target="stub_esp_common"/>
+		</Unit>
+		<Unit filename="/home/tl/esp/obyte-cpp/stubs/esp_common/src/stack_check.c">
+			<Option target="stub_esp_common"/>
+		</Unit>
+		<Unit filename="/home/tl/esp/obyte-cpp/stubs/esp_rom/esp_rom.c">
+			<Option target="stub_esp_rom"/>
+		</Unit>
+		<Unit filename="/home/tl/esp/obyte-cpp/stubs/freertos/FreeRTOS-openocd.c">
+			<Option target="stub_freertos"/>
+		</Unit>
+		<Unit filename="/home/tl/esp/obyte-cpp/stubs/freertos/croutine.c">
+			<Option target="stub_freertos"/>
+		</Unit>
+		<Unit filename="/home/tl/esp/obyte-cpp/stubs/freertos/event_groups.c">
+			<Option target="stub_freertos"/>
+		</Unit>
+		<Unit filename="/home/tl/esp/obyte-cpp/stubs/freertos/freertos/FreeRTOS.h">
+			<Option target="stub_freertos"/>
+		</Unit>
+		<Unit filename="/home/tl/esp/obyte-cpp/stubs/freertos/list.c">
+			<Option target="stub_freertos"/>
+		</Unit>
+		<Unit filename="/home/tl/esp/obyte-cpp/stubs/freertos/port.c">
+			<Option target="stub_freertos"/>
+		</Unit>
+		<Unit filename="/home/tl/esp/obyte-cpp/stubs/freertos/portasm.S">
+			<Option target="stub_freertos"/>
+		</Unit>
+		<Unit filename="/home/tl/esp/obyte-cpp/stubs/freertos/queue.c">
+			<Option target="stub_freertos"/>
+		</Unit>
+		<Unit filename="/home/tl/esp/obyte-cpp/stubs/freertos/tasks.c">
+			<Option target="stub_freertos"/>
+		</Unit>
+		<Unit filename="/home/tl/esp/obyte-cpp/stubs/freertos/timers.c">
+			<Option target="stub_freertos"/>
+		</Unit>
+		<Unit filename="/home/tl/esp/obyte-cpp/stubs/freertos/xtensa_context.S">
+			<Option target="stub_freertos"/>
+		</Unit>
+		<Unit filename="/home/tl/esp/obyte-cpp/stubs/freertos/xtensa_init.c">
+			<Option target="stub_freertos"/>
+		</Unit>
+		<Unit filename="/home/tl/esp/obyte-cpp/stubs/freertos/xtensa_intr.c">
+			<Option target="stub_freertos"/>
+		</Unit>
+		<Unit filename="/home/tl/esp/obyte-cpp/stubs/freertos/xtensa_intr_asm.S">
+			<Option target="stub_freertos"/>
+		</Unit>
+		<Unit filename="/home/tl/esp/obyte-cpp/stubs/freertos/xtensa_overlay_os_hook.c">
+			<Option target="stub_freertos"/>
+		</Unit>
+		<Unit filename="/home/tl/esp/obyte-cpp/stubs/freertos/xtensa_vector_defaults.S">
+			<Option target="stub_freertos"/>
+		</Unit>
+		<Unit filename="/home/tl/esp/obyte-cpp/stubs/freertos/xtensa_vectors.S">
+			<Option target="stub_freertos"/>
+		</Unit>
+		<Unit filename="/home/tl/esp/obyte-cpp/stubs/heap/heap_caps.c">
+			<Option target="stub_heap"/>
+		</Unit>
+		<Unit filename="/home/tl/esp/obyte-cpp/stubs/heap/heap_caps_init.c">
+			<Option target="stub_heap"/>
+		</Unit>
+		<Unit filename="/home/tl/esp/obyte-cpp/stubs/heap/include/esp_heap_caps.h">
+			<Option target="stub_heap"/>
+		</Unit>
+		<Unit filename="/home/tl/esp/obyte-cpp/stubs/heap/multi_heap.c">
+			<Option target="stub_heap"/>
+		</Unit>
+		<Unit filename="/home/tl/esp/obyte-cpp/stubs/log/include/esp_log.h">
+			<Option target="stub_log"/>
+		</Unit>
+		<Unit filename="/home/tl/esp/obyte-cpp/stubs/log/log.c">
+			<Option target="stub_log"/>
+		</Unit>
+		<Unit filename="/home/tl/esp/obyte-cpp/stubs/newlib/heap.c">
+			<Option target="stub_newlib"/>
+		</Unit>
+		<Unit filename="/home/tl/esp/obyte-cpp/stubs/newlib/include/sys/reent.h">
+			<Option target="stub_newlib"/>
+		</Unit>
+		<Unit filename="/home/tl/esp/obyte-cpp/stubs/newlib/locks.c">
+			<Option target="stub_newlib"/>
+		</Unit>
+		<Unit filename="/home/tl/esp/obyte-cpp/stubs/newlib/poll.c">
+			<Option target="stub_newlib"/>
+		</Unit>
+		<Unit filename="/home/tl/esp/obyte-cpp/stubs/newlib/pthread.c">
+			<Option target="stub_newlib"/>
+		</Unit>
+		<Unit filename="/home/tl/esp/obyte-cpp/stubs/newlib/random.c">
+			<Option target="stub_newlib"/>
+		</Unit>
+		<Unit filename="/home/tl/esp/obyte-cpp/stubs/newlib/reent_init.c">
+			<Option target="stub_newlib"/>
+		</Unit>
+		<Unit filename="/home/tl/esp/obyte-cpp/stubs/newlib/select.c">
+			<Option target="stub_newlib"/>
+		</Unit>
+		<Unit filename="/home/tl/esp/obyte-cpp/stubs/newlib/syscall_table.c">
+			<Option target="stub_newlib"/>
+		</Unit>
+		<Unit filename="/home/tl/esp/obyte-cpp/stubs/newlib/syscalls.c">
+			<Option target="stub_newlib"/>
+		</Unit>
+		<Unit filename="/home/tl/esp/obyte-cpp/stubs/newlib/termios.c">
+			<Option target="stub_newlib"/>
+		</Unit>
+		<Unit filename="/home/tl/esp/obyte-cpp/stubs/newlib/time.c">
+			<Option target="stub_newlib"/>
+		</Unit>
+		<Unit filename="/home/tl/esp/obyte-cpp/stubs/newlib/utime.c">
+			<Option target="stub_newlib"/>
+		</Unit>
+		<Unit filename="/home/tl/esp/obyte-cpp/stubs/soc/src/hal/spi_flash_hal.c">
+			<Option target="stub_soc"/>
+		</Unit>
+		<Unit filename="/home/tl/esp/obyte-cpp/stubs/soc/src/hal/spi_flash_hal_iram.c">
+			<Option target="stub_soc"/>
+		</Unit>
+		<Unit filename="/home/tl/esp/obyte-cpp/stubs/soc/src/hal/spi_hal.c">
+			<Option target="stub_soc"/>
+		</Unit>
+		<Unit filename="/home/tl/esp/obyte-cpp/stubs/soc/src/hal/spi_hal_iram.c">
+			<Option target="stub_soc"/>
+		</Unit>
+		<Unit filename="/home/tl/esp/obyte-cpp/stubs/soc/src/hal/spi_slave_hal.c">
+			<Option target="stub_soc"/>
+		</Unit>
+		<Unit filename="/home/tl/esp/obyte-cpp/stubs/soc/src/hal/spi_slave_hal_iram.c">
+			<Option target="stub_soc"/>
+		</Unit>
+		<Unit filename="/home/tl/esp/obyte-cpp/stubs/soc/src/lldesc.c">
+			<Option target="stub_soc"/>
+		</Unit>
+		<Unit filename="/home/tl/esp/obyte-cpp/stubs/soc/src/memory_layout_utils.c">
+			<Option target="stub_soc"/>
+		</Unit>
+		<Unit filename="/home/tl/esp/obyte-cpp/stubs/soc/src/soc_include_legacy_warn.c">
+			<Option target="stub_soc"/>
+		</Unit>
+		<Unit filename="/home/tl/esp/obyte-cpp/stubs/xtensa/debug_helpers.c">
+			<Option target="stub_xtensa"/>
+		</Unit>
+		<Unit filename="/home/tl/esp/obyte-cpp/stubs/xtensa/debug_helpers_asm.S">
+			<Option target="stub_xtensa"/>
+		</Unit>
+		<Unit filename="/home/tl/esp/obyte-cpp/stubs/xtensa/eri.c">
+			<Option target="stub_xtensa"/>
+		</Unit>
+		<Unit filename="/home/tl/esp/obyte-cpp/stubs/xtensa/include/xtensa/hal.h">
+			<Option target="stub_xtensa"/>
+		</Unit>
+		<Unit filename="/home/tl/esp/obyte-cpp/stubs/xtensa/trax.c">
+			<Option target="stub_xtensa"/>
+		</Unit>
+		<Unit filename="/home/tl/esp/obyte-cpp/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/home/tl/esp/obyte-cpp/stubs/esp32/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\stubs\esp32\"/>
+		</Unit>
+		<Unit filename="/home/tl/esp/obyte-cpp/stubs/freertos/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\stubs\freertos\"/>
+		</Unit>
+		<Unit filename="/home/tl/esp/obyte-cpp/stubs/spi_flash/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\stubs\spi_flash\"/>
+		</Unit>
+		<Unit filename="/home/tl/esp/obyte-cpp/stubs/xtensa/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\stubs\xtensa\"/>
+		</Unit>
+		<Unit filename="/home/tl/esp/obyte-cpp/stubs/soc/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\stubs\soc\"/>
+		</Unit>
+		<Unit filename="/home/tl/esp/obyte-cpp/stubs/log/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\stubs\log\"/>
+		</Unit>
+		<Unit filename="/home/tl/esp/obyte-cpp/stubs/newlib/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\stubs\newlib\"/>
+		</Unit>
+		<Unit filename="/home/tl/esp/obyte-cpp/stubs/heap/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\stubs\heap\"/>
+		</Unit>
+		<Unit filename="/home/tl/esp/obyte-cpp/stubs/esp_rom/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\stubs\esp_rom\"/>
+		</Unit>
+		<Unit filename="/home/tl/esp/obyte-cpp/stubs/esp_common/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\stubs\esp_common\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

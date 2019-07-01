@@ -1,0 +1,36 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../stubs/spi_flash/./esp_spi_flash.h
+stddef.h
+-
+
+/home/tl/esp/obyte-cpp/stubs/esp32/cpu_start.c
+stdbool.h
+-
+setjmp.h
+-
+
+/home/tl/esp/obyte-cpp/stubs/esp32/esp_system.h
+stdint.h
+-
+
+/home/tl/esp/obyte-cpp/stubs/esp32/flash_ops.c
+esp_spi_flash.h
+/home/tl/esp/obyte-cpp/stubs/esp32/esp_spi_flash.h
+
+/home/tl/esp/obyte-cpp/stubs/esp32/system_api.c
+stdio.h
+-
+unistd.h
+-
+setjmp.h
+-
+esp_system.h
+/home/tl/esp/obyte-cpp/stubs/esp32/esp_system.h
+

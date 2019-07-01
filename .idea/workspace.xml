@@ -1,0 +1,683 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
+    <generated>
+      <config projectName="obyte_cpp" targetName="stub_newlib" />
+      <config projectName="obyte_cpp" targetName="stub_esp_common" />
+      <config projectName="obyte_cpp" targetName="obyte_cpp.elf" />
+      <config projectName="obyte_cpp" targetName="stub_freertos" />
+      <config projectName="obyte_cpp" targetName="stub_heap" />
+      <config projectName="obyte_cpp" targetName="stub_esp32" />
+      <config projectName="obyte_cpp" targetName="stub_log" />
+      <config projectName="obyte_cpp" targetName="stub_soc" />
+      <config projectName="obyte_cpp" targetName="stub_xtensa" />
+      <config projectName="obyte_cpp" targetName="stub_esp_rom" />
+    </generated>
+  </component>
+  <component name="CMakeSettings" AUTO_RELOAD="true">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="958fd5b8-ea01-491a-af04-081f90da3a05" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stubs/spi_flash/sdkconfig.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.directory" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.13.2/CMakeCCompiler.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.13.2/CMakeCXXCompiler.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.13.2/CMakeDetermineCompilerABI_C.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.13.2/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.13.2/CMakeSystem.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.13.2/CompilerIdC/CMakeCCompilerId.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.13.2/CompilerIdC/a.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.13.2/CompilerIdCXX/CMakeCXXCompilerId.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.13.2/CompilerIdCXX/a.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.13.4/CMakeCCompiler.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.13.4/CMakeCCompiler.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.13.4/CMakeCXXCompiler.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.13.4/CMakeCXXCompiler.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.13.4/CMakeDetermineCompilerABI_C.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.13.4/CMakeDetermineCompilerABI_C.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.13.4/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.13.4/CMakeDetermineCompilerABI_CXX.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.13.4/CMakeSystem.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.13.4/CMakeSystem.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.13.4/CompilerIdC/a.out" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.13.4/CompilerIdC/a.out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.13.4/CompilerIdCXX/a.out" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.13.4/CompilerIdCXX/a.out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeError.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeError.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Progress/1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Progress/2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Progress/count.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Progress/count.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/feature_tests.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/feature_tests.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/obyte_cpp.dir/C.includecache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/obyte_cpp.dir/CXX.includecache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/obyte_cpp.dir/DependInfo.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/obyte_cpp.dir/build.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/obyte_cpp.dir/cmake_clean.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/obyte_cpp.dir/depend.internal" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/obyte_cpp.dir/depend.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/obyte_cpp.dir/flags.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/obyte_cpp.dir/link.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/obyte_cpp.dir/progress.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/obyte_cpp.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/obyte_cpp.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/byteduino.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/byteduino.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/byteduino.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/byteduino.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/communication.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/communication.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/communication.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/communication.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cosigning.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/cosigning.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cosigning.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/cosigning.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/definitions.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/definitions.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hashing.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/hashing.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hub_challenge.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/hub_challenge.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hub_challenge.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/hub_challenge.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/key_rotation.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/key_rotation.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/key_rotation.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/key_rotation.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/AES.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/AES.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/AuthenticatedCipher.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/AuthenticatedCipher.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/Base64.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/Base64.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/Base64.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/Base64.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/BlockCipher.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/BlockCipher.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/Cipher.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/Cipher.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/Crypto.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/Crypto.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/GCM.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/GCM.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/GF128.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/GF128.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/GHASH.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/GHASH.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/Hash2.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/Hash2.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/SHA256.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/SHA256.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/byte_order.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/byte_order.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/ripemd-160.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/ripemd-160.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/websocketclient.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/websocketclient.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/websocketclient.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/websocketclient.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/messenger.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/messenger.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/messenger.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/messenger.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pairing.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/pairing.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pairing.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/pairing.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/payment.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/payment.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/payment.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/payment.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/random_gen.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/random_gen.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/signature.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/signature.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/structures.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/structures.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/wallet.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/wallet.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/wallet.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/wallet.hpp" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
+    <ignored path="$PROJECT_DIR$/cmake-build-xtenza/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="327">
+              <caret line="33" column="37" selection-start-line="33" selection-start-column="37" selection-end-line="33" selection-end-column="37" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/stubs/esp_rom/CMakeLists.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="132">
+              <caret line="6" column="29" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/stubs/heap/CMakeLists.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="88">
+              <caret line="4" column="32" selection-end-line="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/stubs/freertos/CMakeLists.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="324">
+              <caret line="22" column="102" selection-start-line="22" selection-start-column="102" selection-end-line="22" selection-end-column="102" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/stubs/esp_common/CMakeLists.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="286">
+              <caret line="13" column="59" selection-start-line="13" selection-start-column="59" selection-end-line="13" selection-end-column="59" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/stubs/soc/CMakeLists.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="132">
+              <caret line="6" column="9" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/stubs/esp32/CMakeLists.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="261">
+              <caret line="30" column="32" selection-start-line="30" selection-start-column="32" selection-end-line="30" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/stubs/freertos/freertos/FreeRTOSConfig.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="176">
+              <caret line="74" selection-start-line="74" selection-end-line="74" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/stubs/spi_flash/sdkconfig.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="383">
+              <caret line="265" column="45" selection-start-line="265" selection-start-column="45" selection-end-line="265" selection-end-column="45" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/stubs/xtensa/CMakeLists.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="198">
+              <caret line="9" column="28" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>AP</find>
+      <find>CONFIG_FREERTOS_MAX_TASK_NAME_LEN</find>
+      <find>sdkco</find>
+      <find>FREERTOS_CONFIG_H</find>
+      <find>test_</find>
+      <find>test_fatf</find>
+      <find>test</find>
+      <find>test_fat</find>
+      <find>rsil</find>
+      <find>XTOS_SET_INTLEVEL</find>
+      <find>error</find>
+      <find>test_utils.h</find>
+      <find>ENOTSOCK</find>
+      <find>app_update</find>
+      <find>compon</find>
+      <find>heap</find>
+      <find>esp32</find>
+      <find>MAX_TASK_NAME_LEN</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>esp_rom</replace>
+      <replace>esp_common</replace>
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/lib/components/freertos/include/freertos/FreeRTOSConfig.h" />
+        <option value="$PROJECT_DIR$/src/lib/components/app_trace/sys_view/Sample/Config/SEGGER_SYSVIEW_Config_FreeRTOS.c" />
+        <option value="$PROJECT_DIR$/src/lib/components/soc/esp32/include/soc/soc.h" />
+        <option value="$PROJECT_DIR$/src/lib/components/freertos/include/freertos/portmacro.h" />
+        <option value="$PROJECT_DIR$/src/lib/components/freertos/include/freertos/portable.h" />
+        <option value="$PROJECT_DIR$/src/definitions.hpp" />
+        <option value="$PROJECT_DIR$/stubs/log/log.c" />
+        <option value="$PROJECT_DIR$/stubs/freertos/freertos/FreeRTOS.h" />
+        <option value="$PROJECT_DIR$/stubs/log/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/stubs/heap/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/stubs/newlib/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/stubs/spi_flash/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/stubs/esp_rom/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/stubs/xtensa/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/stubs/freertos/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/stubs/soc/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/stubs/esp_common/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/stubs/spi_flash/sdkconfig.h" />
+        <option value="$PROJECT_DIR$/stubs/esp32/CMakeLists.txt" />
+      </list>
+    </option>
+  </component>
+  <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="1914" />
+    <option name="width" value="1932" />
+    <option name="height" value="1086" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="obyte_cpp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="obyte-cpp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="obyte_cpp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="obyte-cpp" type="462c0819:PsiDirectoryNode" />
+              <item name="stubs" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="obyte_cpp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="obyte-cpp" type="462c0819:PsiDirectoryNode" />
+              <item name="stubs" type="462c0819:PsiDirectoryNode" />
+              <item name="esp32" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="obyte_cpp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="obyte-cpp" type="462c0819:PsiDirectoryNode" />
+              <item name="stubs" type="462c0819:PsiDirectoryNode" />
+              <item name="esp_common" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="obyte_cpp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="obyte-cpp" type="462c0819:PsiDirectoryNode" />
+              <item name="stubs" type="462c0819:PsiDirectoryNode" />
+              <item name="spi_flash" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="CMakeSettings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/lib/components/freertos/include/freertos" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="CMake Application.obyte_cpp.elf">
+    <configuration name="obyte_cpp.elf" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="obyte_cpp" TARGET_NAME="obyte_cpp.elf" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="obyte_cpp" RUN_TARGET_NAME="obyte_cpp.elf">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="stub_esp32" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="obyte_cpp" TARGET_NAME="stub_esp32" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="stub_esp_common" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="obyte_cpp" TARGET_NAME="stub_esp_common" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="stub_esp_rom" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="obyte_cpp" TARGET_NAME="stub_esp_rom" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="stub_freertos" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="obyte_cpp" TARGET_NAME="stub_freertos" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="stub_heap" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="obyte_cpp" TARGET_NAME="stub_heap" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="stub_log" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="obyte_cpp" TARGET_NAME="stub_log" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="stub_newlib" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="obyte_cpp" TARGET_NAME="stub_newlib" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="stub_soc" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="obyte_cpp" TARGET_NAME="stub_soc" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="stub_xtensa" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="obyte_cpp" TARGET_NAME="stub_xtensa" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="CMake Application.obyte_cpp.elf" />
+      <item itemvalue="CMake Application.stub_esp32" />
+      <item itemvalue="CMake Application.stub_esp_common" />
+      <item itemvalue="CMake Application.stub_esp_rom" />
+      <item itemvalue="CMake Application.stub_freertos" />
+      <item itemvalue="CMake Application.stub_heap" />
+      <item itemvalue="CMake Application.stub_log" />
+      <item itemvalue="CMake Application.stub_newlib" />
+      <item itemvalue="CMake Application.stub_soc" />
+      <item itemvalue="CMake Application.stub_xtensa" />
+    </list>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="958fd5b8-ea01-491a-af04-081f90da3a05" name="Default Changelist" comment="" />
+      <created>1561459231431</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1561459231431</updated>
+      <workItem from="1561459236434" duration="812000" />
+      <workItem from="1561576510444" duration="1470000" />
+      <workItem from="1561653324952" duration="1984000" />
+      <workItem from="1561719377536" duration="6586000" />
+      <workItem from="1561725860472" duration="20820000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="31672000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="1914" y="0" width="1932" height="1086" extended-state="6" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26533908" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32967034" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Database Changes" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="10" />
+      <window_info anchor="bottom" id="CMake" order="11" weight="0.30879122" />
+      <window_info active="true" anchor="bottom" id="Messages" order="12" visible="true" weight="0.43296704" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" />
+    </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26533908" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32967034" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Database Changes" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="10" />
+      <window_info anchor="bottom" id="CMake" order="11" weight="0.30879122" />
+      <window_info anchor="bottom" id="Messages" order="12" visible="true" weight="0.43296704" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/src/lib/components/freertos/include/freertos/portmacro.h</url>
+          <line>253</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/lib/components/freertos/tasks.c" />
+    <entry file="file://$PROJECT_DIR$/src/lib/components/freertos/include/freertos/FreeRTOS.h" />
+    <entry file="file://$PROJECT_DIR$/src/lib/components/freertos/include/freertos/FreeRTOSConfig.h" />
+    <entry file="file://$PROJECT_DIR$/src/lib/components/freertos/include/freertos/sdkconfig.h" />
+    <entry file="file://$PROJECT_DIR$/src/lib/components/fatfs/test_fatfs_host/sdkconfig/sdkconfig.h" />
+    <entry file="file://$PROJECT_DIR$/src/lib/components/nghttp/nghttp2/third-party/mruby/Makefile" />
+    <entry file="file:///usr/include/x86_64-linux-gnu/c++/8/bits/os_defines.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="43" column="18" selection-start-line="43" selection-start-column="18" selection-end-line="43" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lib/components/freertos/include/freertos/portmacro.h" />
+    <entry file="file://$PROJECT_DIR$/src/lib/components/freertos/include/freertos/portable.h" />
+    <entry file="file://$PROJECT_DIR$/src/lib/components/app_trace/sys_view/Sample/Config/SEGGER_SYSVIEW_Config_FreeRTOS.c" />
+    <entry file="file://$PROJECT_DIR$/src/lib/components/newlib/include/sys/errno.h" />
+    <entry file="file:///usr/include/x86_64-linux-gnu/c++/8/bits/error_constants.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2420">
+          <caret line="111" column="36" selection-start-line="111" selection-start-column="36" selection-end-line="111" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lib/components/soc/esp32/include/soc/soc.h" />
+    <entry file="file://$PROJECT_DIR$/src/byteduino.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="16" column="22" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/definitions.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" column="30" selection-start-line="2" selection-start-column="30" selection-end-line="2" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stubs/soc/src/memory_layout_utils.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="169">
+          <caret line="18" column="21" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stubs/freertos/freertos/task.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="109">
+          <caret line="74" selection-start-line="74" selection-end-line="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stubs/freertos/task.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stubs/freertos/freertos/mpu_wrappers.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-668">
+          <caret line="77" column="29" selection-start-line="77" selection-start-column="29" selection-end-line="77" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stubs/log/log.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="7" column="2" selection-start-line="7" selection-start-column="2" selection-end-line="7" selection-end-column="2" />
+          <folding>
+            <element signature="e#1709#1739#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stubs/freertos/freertos/FreeRTOS.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="148">
+          <caret line="76" selection-start-line="76" selection-end-line="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stubs/newlib/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="19" column="66" selection-start-line="19" selection-start-column="66" selection-end-line="19" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stubs/spi_flash/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="1" column="54" selection-start-line="1" selection-start-column="54" selection-end-line="1" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stubs/esp32/esp32/rom/ets_sys.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="1" column="30" selection-start-line="1" selection-start-column="30" selection-end-line="1" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stubs/log/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stubs/esp_rom/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="6" column="29" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stubs/xtensa/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="9" column="28" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="327">
+          <caret line="33" column="37" selection-start-line="33" selection-start-column="37" selection-end-line="33" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stubs/freertos/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="22" column="102" selection-start-line="22" selection-start-column="102" selection-end-line="22" selection-end-column="102" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stubs/soc/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="6" column="9" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stubs/esp_common/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="13" column="59" selection-start-line="13" selection-start-column="59" selection-end-line="13" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stubs/freertos/freertos/FreeRTOSConfig.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="74" selection-start-line="74" selection-end-line="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stubs/spi_flash/sdkconfig.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="383">
+          <caret line="265" column="45" selection-start-line="265" selection-start-column="45" selection-end-line="265" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stubs/heap/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="4" column="32" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stubs/esp32/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="261">
+          <caret line="30" column="32" selection-start-line="30" selection-start-column="32" selection-end-line="30" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

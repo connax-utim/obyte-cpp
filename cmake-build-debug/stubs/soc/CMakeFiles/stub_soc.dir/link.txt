@@ -1,0 +1,2 @@
+/usr/bin/ar qc libstub_soc.a  CMakeFiles/stub_soc.dir/src/memory_layout_utils.c.o CMakeFiles/stub_soc.dir/src/lldesc.c.o CMakeFiles/stub_soc.dir/src/hal/spi_hal.c.o CMakeFiles/stub_soc.dir/src/hal/spi_hal_iram.c.o CMakeFiles/stub_soc.dir/src/hal/spi_slave_hal.c.o CMakeFiles/stub_soc.dir/src/hal/spi_slave_hal_iram.c.o CMakeFiles/stub_soc.dir/src/soc_include_legacy_warn.c.o CMakeFiles/stub_soc.dir/src/hal/spi_flash_hal.c.o CMakeFiles/stub_soc.dir/src/hal/spi_flash_hal_iram.c.o
+/usr/bin/ranlib libstub_soc.a
