@@ -4,48 +4,45 @@ project(obyte_cpp)
 SET (BOOST_ROOT "/usr/local/boost_1_70_0")
 SET (BOOST_INCLUDEDIR "/usr/local/boost_1_70_0/boost")
 SET (BOOST_LIBRARYDIR "/usr/local/boost_1_70_0/libs")
-FIND_PACKAGE(Boost ${BOOST_MIN_VERSION} REQUIRED thread system)
+FIND_PACKAGE(Boost ${BOOST_MIN_VERSION} REQUIRED COMPONENTS thread system)
+FIND_PACKAGE(OpenSSL)
 
-if("${TARGET}" STREQUAL "esp32")
-    # Include for ESP-IDF build system functions
-    include($ENV{IDF_PATH}/tools/cmake/idf.cmake)
-    # Create idf::esp32 and idf::freertos static libraries
-    idf_build_process(esp32
-            # try and trim the build; additional components
-            # will be included as needed based on dependency tree
-            #
-            # although esptool_py does not generate static library,
-            # processing the component is needed for flashing related
-            # targets and file generation
-            COMPONENTS esp32 freertos esptool_py xtenza soc
-            SDKCONFIG ${CMAKE_BINARY_DIR}/sdkconfig
-            BUILD_DIR ${CMAKE_BINARY_DIR})
-else()
-    # Create stubs for esp32 and freertos, stub::esp32 and stub::freertos
-    add_subdirectory(stubs/esp32)
-    add_subdirectory(stubs/freertos)
-    add_subdirectory(stubs/spi_flash)
-    add_subdirectory(stubs/xtensa)
-    add_subdirectory(stubs/soc)
-    add_subdirectory(stubs/log)
-    add_subdirectory(stubs/newlib)
-    add_subdirectory(stubs/heap)
-    add_subdirectory(stubs/esp_rom)
-    add_subdirectory(stubs/esp_common)
-endif()
+#if("${TARGET}" STREQUAL "esp32")
+#    # Include for ESP-IDF build system functions
+#    include($ENV{IDF_PATH}/tools/cmake/idf.cmake)
+#    # Create idf::esp32 and idf::freertos static libraries
+#    idf_build_process(esp32
+#            # try and trim the build; additional components
+#            # will be included as needed based on dependency tree
+#            #
+#            # although esptool_py does not generate static library,
+#            # processing the component is needed for flashing related
+#            # targets and file generation
+#            COMPONENTS esp32 freertos esptool_py xtenza soc
+#            SDKCONFIG ${CMAKE_BINARY_DIR}/sdkconfig
+#            BUILD_DIR ${CMAKE_BINARY_DIR})
+#else()
+#    # Create stubs for esp32 and freertos, stub::esp32 and stub::freertos
+#    add_subdirectory(stubs/esp32)
+#    add_subdirectory(stubs/freertos)
+#    add_subdirectory(stubs/spi_flash)
+#    add_subdirectory(stubs/xtensa)
+#    add_subdirectory(stubs/soc)
+#    add_subdirectory(stubs/log)
+#    add_subdirectory(stubs/newlib)
+#    add_subdirectory(stubs/heap)
+#    add_subdirectory(stubs/esp_rom)
+#    add_subdirectory(stubs/esp_common)
+#endif()
 
 include_directories(src)
 include_directories(src/lib)
 include_directories(src/lib/micro-ecc)
 include_directories(src/lib/utility)
 
-set(elf_file ${CMAKE_PROJECT_NAME}.elf)
+#set(elf_file ${CMAKE_PROJECT_NAME}.elf)
 
-add_executable(${elf_file}
-        src/lib/micro-ecc/test/test_compress.c
-        src/lib/micro-ecc/test/test_compute.c
-        src/lib/micro-ecc/test/test_ecdh.c
-        src/lib/micro-ecc/test/test_ecdsa.c
+add_executable(obyte_cpp
         src/lib/micro-ecc/types.h
         src/lib/micro-ecc/uECC.c
         src/lib/micro-ecc/uECC.h
@@ -55,6 +52,9 @@ add_executable(${elf_file}
         src/lib/utility/ProgMemUtil.hpp
         src/lib/utility/RotateUtil.hpp
         src/lib/AES.hpp
+        src/lib/AES128.cpp
+        src/lib/AESCommon.cpp
+        src/lib/AESEsp32.cpp
         src/lib/AuthenticatedCipher.cpp
         src/lib/AuthenticatedCipher.hpp
         src/lib/Base64.cpp
@@ -109,28 +109,30 @@ add_executable(${elf_file}
         src/structures.hpp
         src/wallet.cpp
         src/wallet.hpp
-        CMakeLists.txt)
+        CMakeLists.txt src/main.cpp)
 
 #target_link_libraries(obyte_cpp Boost::system Boost::thread)
 
-if("${TARGET}" STREQUAL "esp32")
-    target_link_libraries(${elf_file} idf::esp32 idf::freertos idf::spi_flash Boost::system Boost::thread)
-    # Attach additional targets to the executable file for flashing,
-    # linker script generation, partition_table generation, etc.
-    idf_build_executable(${elf_file})
-else()
-    target_link_libraries(${elf_file}
-            stub::freertos
-            stub::newlib
-            stub::esp32
-            stub::spi_flash
-            stub::xtensa
-            stub::soc
-            stub::log
-            stub::heap
-            stub::esp_rom
-            stub::esp_common
-            Boost::system
-            Boost::thread)
-endif()
+#if("${TARGET}" STREQUAL "esp32")
+#    target_link_libraries(${elf_file} idf::esp32 idf::freertos idf::spi_flash Boost::system Boost::thread)
+#    # Attach additional targets to the executable file for flashing,
+#    # linker script generation, partition_table generation, etc.
+#    idf_build_executable(${elf_file})
+#else()
+#    target_link_libraries(${elf_file}
+#            stub::freertos
+#            stub::newlib
+#            stub::esp32
+#            stub::spi_flash
+#            stub::xtensa
+#            stub::soc
+#            stub::log
+#            stub::heap
+#            stub::esp_rom
+#            stub::esp_common
+#            Boost::system
+#            Boost::thread)
+#endif()
+
+target_link_libraries(obyte_cpp Boost::system Boost::thread OpenSSL::SSL OpenSSL::Crypto)
 set(CMAKE_EXPORT_COMPILE_COMMANDS 1)

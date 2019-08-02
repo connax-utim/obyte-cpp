@@ -1,2 +1,0 @@
-/usr/bin/ar qc libstub_log.a  CMakeFiles/stub_log.dir/log.c.o
-/usr/bin/ranlib libstub_log.a

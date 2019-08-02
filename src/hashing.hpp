@@ -26,7 +26,7 @@ void getChash160 (uint8_t * hash160, char chash[33]);
 void getDeviceAddress(const char * pubkey, char deviceAddress[34]);
 template <class T> bool updateHashForObject (T hasher, const nlohmann::json& object, bool isFirst);
 template <class T> void getChash160 (T input, char chash[32]);
-template <class T> bool updateHashForArray (T hasher, nlohmann::json array, bool isFirst);
+template <class T> bool updateHashForArray (T hasher, const nlohmann::json& array, bool isFirst);
 template <class T> bool updateHashForInteger (T hasher, const int number);
 template <class T> bool updateHashForChar (T hasher, const char * charToHash);
 bool isChar1BeforeChar2(const char* char1, const char* char2);

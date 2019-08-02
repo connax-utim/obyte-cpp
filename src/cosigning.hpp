@@ -6,7 +6,7 @@
 
 #include "byteduino.hpp"
 
-void handleSignatureRequest(const char senderPubkey[45], nlohmann::json package);
+void handleSignatureRequest(const char senderPubkey[45], nlohmann::json& package);
 void treatWaitingSignature();
 void stripSignAndAddToConfirmationRoom(const char recipientPubKey[45], nlohmann::json body);
 bool acceptToSign(const char * signedTxt);

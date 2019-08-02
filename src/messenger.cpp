@@ -2,6 +2,8 @@
 // MIT License
 #include "messenger.hpp"
 
+extern Base64Class Base64;
+
 extern Byteduino byteduino_device;
 
 extern messengerKeys myMessengerKeys;

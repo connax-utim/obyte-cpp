@@ -1,6 +1,7 @@
 // Byteduino lib - papabyte.com
 // MIT License
 #include "key_rotation.hpp"
+extern Base64Class Base64;
 
 messengerKeys myMessengerKeys;
 
@@ -46,20 +47,29 @@ void createNewMessengerKeysAndSaveInFlash(){
 
 	std::ofstream outjson("keys.json");
 	outjson << std::setw(4) << keys << std::endl;
-
+    std::cout << std::setw(4) << keys << std::endl;
 }
 
 void loadPreviousMessengerKeys(){
-	nlohmann::json keys;
+    std::string input;
 	std::ifstream injson("keys.json");
-	injson >> keys;
+	injson >> input;
+	std::cout << "input:\n" << input << std::endl;
+    nlohmann::json keys = nlohmann::json::parse(input);
+    std::cout << "keys:\n" << keys.dump() << std::endl;
 	int i = 0;
-	for (auto it = keys["private"].begin();i<32 && it != keys["private"].end();i++, it++){
-		myMessengerKeys.previousPrivateKey[i] = *it;
+	if(keys.find("private") != keys.end()) {
+        for (auto& elem : keys["private"]){
+            myMessengerKeys.previousPrivateKey[i] = elem;
+            i++;
+        }
 	}
 	i = 0;
-	for (auto it = keys["public"].begin() ;i<45 && it != keys["public"].end(); i++, it++){
-		myMessengerKeys.previousPubKeyB64[i] = strtol(it->dump().c_str(), nullptr, 10);
+	if(keys.find("public") != keys.end()) {
+        for (auto& elem : keys["public"]){
+            myMessengerKeys.previousPubKeyB64[i] = strtol(elem.dump().c_str(), nullptr, 10);
+            i++;
+        }
 	}
 }
 

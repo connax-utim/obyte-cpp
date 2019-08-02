@@ -1,7 +1,7 @@
 #ifndef _DEFINITIONS_H_
 #define _DEFINITIONS_H_
-#include "freertos/FreeRTOS.h"
-#include "xtensa/include/xtensa/hal.h"
+//#include "freertos/FreeRTOS.h"
+//#include "xtensa/include/xtensa/hal.h"
 
 //Tag types
 #define HEARTBEAT "-1"
@@ -55,7 +55,14 @@
 //#define FEED_WATCHDOG if (watchdogTimer != NULL) {timerWrite(watchdogTimer, 0);}
 #define RANDOM_REGISTER 0x3FF75144
 //#define GET_CYCLE_COUNT ESP.getCycleCount()
-#define GET_CYCLE_COUNT xthal_get_ccount()
+static __inline__ unsigned long long rdtsc()
+{
+    unsigned hi, lo;
+    __asm__ __volatile__ ("rdtsc" : "=a"(lo), "=d"(hi));
+    return ( (unsigned long long)lo)|( ((unsigned long long)hi)<<32 );
+}
+//#define GET_CYCLE_COUNT xthal_get_ccount()
+#define GET_CYCLE_COUNT rdtsc()
 #define MAX_MESSAGE_LENGTH 40000
 #define MAX_MESSAGE_COUNT 1
 #define SENT_PACKAGE_BUFFER_SIZE 5000

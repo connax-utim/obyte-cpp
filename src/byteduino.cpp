@@ -10,6 +10,9 @@ hw_timer_t * watchdogTimer = NULL;
 clock_t baseTimer;
 #endif
 
+// hand placement for the string to be global; initiation should be in init() function
+std::string esp_partition_string(10000, 0);
+
 // WSClient webSocketForHub;
 net::io_context webSocketForHub;
 //#if !UNIQUE_WEBSOCKET
@@ -22,11 +25,13 @@ bufferPackageReceived bufferForPackageReceived;
 bufferPackageSent bufferForPackageSent;
 Byteduino byteduino_device;
 
-void IRAM_ATTR timerCallback() {
+//void IRAM_ATTR timerCallback() {
+void timerCallback() {
 	baseTickOccured = true;
 }
 
-void IRAM_ATTR restartDevice() {
+//void IRAM_ATTR restartDevice() {
+void restartDevice() {
 //  ESP.restart();
 }
 
@@ -108,7 +113,8 @@ void byteduino_init (){
 
 	// set up data partition access
 	// EEPROM.begin(TOTAL_USED_FLASH);
-	const esp_partition_t* obyte = esp_partition_find_first(ESP_PARTITION_TYPE_DATA, ESP_PARTITION_SUBTYPE_ANY, "obyte_data");
+
+//	const esp_partition_t* obyte = esp_partition_find_first(ESP_PARTITION_TYPE_DATA, ESP_PARTITION_SUBTYPE_ANY, "obyte_data");
 
 	uECC_set_rng(&getRandomNumbersForUecc);
 	loadPreviousMessengerKeys();

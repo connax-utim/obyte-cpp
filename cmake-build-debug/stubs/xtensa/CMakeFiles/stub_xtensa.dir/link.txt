@@ -1,2 +1,0 @@
-/usr/bin/ar qc libstub_xtensa.a  CMakeFiles/stub_xtensa.dir/debug_helpers.c.o CMakeFiles/stub_xtensa.dir/eri.c.o CMakeFiles/stub_xtensa.dir/trax.c.o
-/usr/bin/ranlib libstub_xtensa.a

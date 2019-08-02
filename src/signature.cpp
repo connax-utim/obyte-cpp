@@ -3,6 +3,8 @@
 
 #include "signature.hpp"
 
+extern Base64Class Base64;
+
 #if defined(ESP32)
 extern hw_timer_t * watchdogTimer;
 #endif

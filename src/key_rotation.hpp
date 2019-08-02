@@ -10,6 +10,7 @@
 #include "lib/SHA256.hpp"
 #include <stdlib.h>
 #include <fstream>
+#include <iostream>
 
 
 void setAndSendNewMessengerKey();

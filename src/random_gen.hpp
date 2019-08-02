@@ -4,7 +4,9 @@
 #ifndef _RANDOM_GEN_H_
 #define _RANDOM_GEN_H_
 
-#include <lib/components/soc/esp32/include/soc/soc.h>
+//#include <lib/components/soc/esp32/include/soc/soc.h>
+#include <random>
+#include <chrono>
 #include <definitions.hpp>
 #include <inttypes.h>
 

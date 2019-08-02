@@ -8,7 +8,7 @@
 #include "byteduino.hpp"
 
 void requestDefinition(const char* address);
-void handleDefinition(const nlohmann::json* receivedObject);
+void handleDefinition(const nlohmann::json& receivedObject);
 void requestInputsForAmount(int amount, const char * address);
 void handleInputsForAmount(nlohmann::json receivedObject, const char * tag);
 void getParentsAndLastBallAndWitnesses();

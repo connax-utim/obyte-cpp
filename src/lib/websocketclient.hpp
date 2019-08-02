@@ -59,7 +59,8 @@ private:
 #endif
 
 void fail(beast::error_code, char const*);
-net::io_context WSInitiate(net::io_context&, const std::string&, const int&);
+//net::io_context
+void WSInitiate(net::io_context&, const std::string&, const int&);
 void sendTXT(const std::string&);
 
 #endif //OBYTE_CPP_WEBSOCKETCLIENT_HPP

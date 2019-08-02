@@ -265,7 +265,8 @@ session::LoopWrite() {
                     shared_from_this()));
 }
 
-net::io_context
+//net::io_context
+void
 WSInitiate(net::io_context &ioc, const std::string &host, const int &port) {
     const std::string s_port = std::to_string(port);
 

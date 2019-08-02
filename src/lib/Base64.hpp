@@ -27,9 +27,9 @@ class Base64Class{
 };
 //extern Base64Class Base64;
 
-#ifndef _BASE64_OBJECT
-#define _BASE64_OBJECT
-extern Base64Class Base64;
-#endif // _BASE64_OBJECT
+//#ifndef _BASE64_OBJECT
+//#define _BASE64_OBJECT
+//extern Base64Class Base64;
+//#endif // _BASE64_OBJECT
 
 #endif // _BASE64_H

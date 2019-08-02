@@ -5,6 +5,7 @@
 
 
 extern net::io_context webSocketForHub;
+extern Base64Class Base64;
 
 extern Byteduino byteduino_device;
 extern bufferPackageReceived bufferForPackageReceived;
@@ -288,7 +289,7 @@ void treatResponseFromHub(nlohmann::json arr){
 #ifdef DEBUG_PRINT
 				std::clog << "definition received" << std::endl;
 #endif
-				handleDefinition(&arr[1]);
+				handleDefinition(arr[1]);
 			} else if (tag[9] == GET_INPUTS_FOR_AMOUNT[1]){
 #ifdef DEBUG_PRINT
 				std::clog << "inputs received" << std::endl;

@@ -5,17 +5,20 @@
 extern Byteduino byteduino_device;
 extern bufferPackageReceived bufferForPackageReceived;
 extern bufferPackageSent bufferForPackageSent;
-extern esp_partition_t* obyte;
+//extern esp_partition_t* obyte;
+extern std::string esp_partition_string;
 
-void readPairedDevicesJson(nlohmann::json j){
+void readPairedDevicesJson(nlohmann::json& j){
 	char firstChar;
-	esp_partition_read(obyte, PAIRED_DEVICES, &firstChar, 1);
+	//esp_partition_read(obyte, PAIRED_DEVICES, &firstChar, 1);
+	firstChar = esp_partition_string[PAIRED_DEVICES];
     char str[PAIRED_DEVICES_FLASH_SIZE];
 	if (firstChar == 0x7B){
 		int i = -1; 
 		do {
 			i++;
-			esp_partition_read(obyte, PAIRED_DEVICES+i, &str[i], 1);
+			//esp_partition_read(obyte, PAIRED_DEVICES+i, &str[i], 1);
+            str[i] = esp_partition_string[PAIRED_DEVICES+i];
 		}
 		while (str[i] != 0x00 && i < (PAIRED_DEVICES_FLASH_SIZE));
 		str[PAIRED_DEVICES_FLASH_SIZE-1]=0x00;
@@ -30,7 +33,8 @@ void readPairedDevicesJson(nlohmann::json j){
 
 std::string getDevicesJsonString(){
 	char firstChar;
-	esp_partition_read(obyte, PAIRED_DEVICES, &firstChar, 1);
+	//esp_partition_read(obyte, PAIRED_DEVICES, &firstChar, 1);
+	firstChar = esp_partition_string[PAIRED_DEVICES];
 	char lastCharRead;
 	std::string returnedString;
 
@@ -38,7 +42,8 @@ std::string getDevicesJsonString(){
 		int i = -1; 
 		do {
 			i++;
-			esp_partition_read(obyte, PAIRED_DEVICES+i, &lastCharRead, 1);
+			//esp_partition_read(obyte, PAIRED_DEVICES+i, &lastCharRead, 1);
+			lastCharRead = esp_partition_string[PAIRED_DEVICES+i];
 			if (lastCharRead!= 0x00)
 				returnedString += lastCharRead;
 		}
@@ -81,7 +86,8 @@ void savePeerInFlash(char peerPubkey[45],const char * peerHub, const char * peer
 		int i = -1; 
 		do {
 			i++;
-			esp_partition_write(obyte, PAIRED_DEVICES+i, output+i, 1);
+			//esp_partition_write(obyte, PAIRED_DEVICES+i, output+i, 1);
+			esp_partition_string[PAIRED_DEVICES+i] = output[i];
 		}
 		while (output[i]!= 0x00 && i < (PAIRED_DEVICES+PAIRED_DEVICES_FLASH_SIZE));
 	} else{

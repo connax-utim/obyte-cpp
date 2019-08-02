@@ -59,7 +59,7 @@ void saveWalletDefinitionInFlash(const char* wallet, const char* wallet_name, nl
 
 /*
  * */
-void handleNewWalletRequest(char initiatorPubKey [45], nlohmann::json package){
+void handleNewWalletRequest(char initiatorPubKey [45], nlohmann::json& package){
 	const char* wallet = package["body"]["wallet"].dump().c_str();
 	if (wallet != nullptr){
 		if (typeid(package["body"]["is_single_address"]) == typeid(bool) && package["body"]["is_single_address"]){

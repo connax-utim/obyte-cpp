@@ -1,2 +1,0 @@
-/usr/bin/ar qc libstub_heap.a  CMakeFiles/stub_heap.dir/heap_caps.c.o CMakeFiles/stub_heap.dir/heap_caps_init.c.o CMakeFiles/stub_heap.dir/multi_heap.c.o
-/usr/bin/ranlib libstub_heap.a

@@ -8,6 +8,8 @@ int randomPoolTicker = 0;
 uint8_t randomPool[87];
 bool isRandomPoolReady = false;
 
+unsigned seed = std::chrono::system_clock::now().time_since_epoch().count();
+std::mt19937 Rnd(seed);
 
 bool isRandomGeneratorReady(){
 	return isRandomPoolReady;
@@ -55,7 +57,8 @@ void updateRandomPool(){
 	randomPoolTicker++;
 	if (randomPoolTicker == RANDOM_POOL_TICKER_RESET){ //need to wait around 5 mega cycles to be sure random number generator is reliable
 		randomPoolTicker = 0;
-		uint32_t fromHardRandomGen = READ_PERI_REG(RANDOM_REGISTER);
+		//uint32_t fromHardRandomGen = READ_PERI_REG(RANDOM_REGISTER);
+		uint32_t fromHardRandomGen = Rnd() % RANDOM_REGISTER;
 		randomPool[fillingIndex] = (0xff) ^ fromHardRandomGen;
 		randomPool[fillingIndex+1] = (0xff) ^ (fromHardRandomGen >> 8);
 		randomPool[fillingIndex+2] = (0xff) ^ (fromHardRandomGen >> 16) ^ GET_CYCLE_COUNT;

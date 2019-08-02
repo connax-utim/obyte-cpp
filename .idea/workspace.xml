@@ -2,16 +2,7 @@
 <project version="4">
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
     <generated>
-      <config projectName="obyte_cpp" targetName="stub_newlib" />
-      <config projectName="obyte_cpp" targetName="stub_esp_common" />
-      <config projectName="obyte_cpp" targetName="obyte_cpp.elf" />
-      <config projectName="obyte_cpp" targetName="stub_freertos" />
-      <config projectName="obyte_cpp" targetName="stub_heap" />
-      <config projectName="obyte_cpp" targetName="stub_esp32" />
-      <config projectName="obyte_cpp" targetName="stub_log" />
-      <config projectName="obyte_cpp" targetName="stub_soc" />
-      <config projectName="obyte_cpp" targetName="stub_xtensa" />
-      <config projectName="obyte_cpp" targetName="stub_esp_rom" />
+      <config projectName="obyte_cpp" targetName="obyte_cpp" />
     </generated>
   </component>
   <component name="CMakeSettings" AUTO_RELOAD="true">
@@ -21,98 +12,651 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="958fd5b8-ea01-491a-af04-081f90da3a05" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/stubs/spi_flash/sdkconfig.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.directory" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.13.2/CMakeCCompiler.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.13.2/CMakeCXXCompiler.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.13.2/CMakeDetermineCompilerABI_C.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.13.2/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.13.2/CMakeSystem.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.13.2/CompilerIdC/CMakeCCompilerId.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.13.2/CompilerIdC/a.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.13.2/CompilerIdCXX/CMakeCXXCompilerId.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.13.2/CompilerIdCXX/a.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.13.4/CMakeCCompiler.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.13.4/CMakeCCompiler.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.13.4/CMakeCXXCompiler.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.13.4/CMakeCXXCompiler.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.13.4/CMakeDetermineCompilerABI_C.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.13.4/CMakeDetermineCompilerABI_C.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.13.4/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.13.4/CMakeDetermineCompilerABI_CXX.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.13.4/CMakeSystem.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.13.4/CMakeSystem.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.13.4/CompilerIdC/a.out" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.13.4/CompilerIdC/a.out" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.13.4/CompilerIdCXX/a.out" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.13.4/CompilerIdCXX/a.out" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeError.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeError.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Progress/1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Progress/2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Progress/count.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Progress/count.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Progress/50" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Progress/51" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Progress/52" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Progress/53" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Progress/54" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Progress/58" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Progress/59" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Progress/count.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/feature_tests.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/feature_tests.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/obyte_cpp.dir/C.includecache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/obyte_cpp.dir/CXX.includecache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/obyte_cpp.dir/DependInfo.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/obyte_cpp.dir/build.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/obyte_cpp.dir/cmake_clean.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/obyte_cpp.dir/depend.internal" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/obyte_cpp.dir/depend.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/obyte_cpp.dir/flags.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/obyte_cpp.dir/link.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/obyte_cpp.dir/progress.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/obyte_cpp.elf.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/obyte_cpp.elf.dir/CXX.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/obyte_cpp.elf.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/obyte_cpp.elf.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/obyte_cpp.elf.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/obyte_cpp.elf.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/obyte_cpp.elf.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/obyte_cpp.elf.dir/cmake_clean.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/obyte_cpp.elf.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/obyte_cpp.elf.dir/depend.internal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/obyte_cpp.elf.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/obyte_cpp.elf.dir/depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/obyte_cpp.elf.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/obyte_cpp.elf.dir/flags.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/obyte_cpp.elf.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/obyte_cpp.elf.dir/link.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/obyte_cpp.elf.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/obyte_cpp.elf.dir/progress.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/compile_commands.json" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/compile_commands.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/obyte_cpp.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/obyte_cpp.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/stubs/esp_common/CMakeFiles/stub_esp_common.dir/src/dbg_stubs.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/stubs/esp_common/CMakeFiles/stub_esp_common.dir/src/esp_err_to_name.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/stubs/esp_common/CMakeFiles/stub_esp_common.dir/src/esp_timer.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/stubs/esp_common/CMakeFiles/stub_esp_common.dir/src/ets_timer_legacy.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/stubs/esp_rom/CMakeFiles/stub_esp_rom.dir/esp_rom.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/stubs/esp_rom/libstub_esp_rom.a" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/byteduino.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/byteduino.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/byteduino.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/byteduino.hpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/communication.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/communication.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/communication.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/communication.hpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/cosigning.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/cosigning.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/cosigning.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/cosigning.hpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/definitions.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/definitions.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hashing.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/hashing.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/hashing.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/hashing.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hub_challenge.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/hub_challenge.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hub_challenge.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/hub_challenge.hpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/key_rotation.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/key_rotation.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/key_rotation.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/key_rotation.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/AES.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/AES.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/AuthenticatedCipher.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/AuthenticatedCipher.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/Base64.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/Base64.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lib/Base64.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/Base64.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/BlockCipher.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/BlockCipher.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/Cipher.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/Cipher.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/Crypto.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/Crypto.hpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lib/GCM.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/GCM.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/GF128.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/GF128.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/GHASH.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/GHASH.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/Hash2.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/Hash2.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/SHA256.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/SHA256.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/byte_order.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/byte_order.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/ripemd-160.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/ripemd-160.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/micro-ecc/test/emk_rules.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/micro-ecc/test/test_compress.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/micro-ecc/test/test_compute.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/micro-ecc/test/test_ecdh.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/micro-ecc/test/test_ecdsa.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/micro-ecc/test/test_ecdsa_deterministic.c.example" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lib/websocketclient.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/websocketclient.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lib/websocketclient.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/websocketclient.hpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/messenger.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/messenger.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/messenger.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/messenger.hpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pairing.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/pairing.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pairing.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/pairing.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/payment.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/payment.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/payment.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/payment.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/random_gen.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/random_gen.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/random_gen.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/random_gen.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/signature.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/signature.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/structures.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/structures.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/signature.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/signature.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/wallet.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/wallet.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/wallet.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/wallet.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/esp32/CMakeLists.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/esp32/Kconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/esp32/Makefile.projbuild" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/esp32/brownout.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/esp32/cache_err_int.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/esp32/cache_sram_mmu.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/esp32/clk.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/esp32/component.mk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/esp32/cpu_start.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/esp32/crosscore_int.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/esp32/dport_access.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/esp32/dport_panic_highint_hdl.S" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/esp32/esp_adapter.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/esp32/esp_clk_internal.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/esp32/esp_himem.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/esp32/esp_timer_esp32.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/esp32/gdbstub.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/esp32/hw_random.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/esp32/include/esp32/brownout.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/esp32/include/esp32/cache_err_int.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/esp32/include/esp32/clk.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/esp32/include/esp32/dport_access.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/esp32/include/esp32/himem.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/esp32/include/esp32/pm.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/esp32/include/esp32/spiram.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/esp32/include/esp_attr.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/esp32/include/esp_clk.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/esp32/include/esp_himem.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/esp32/include/esp_intr.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/esp32/include/esp_intr_alloc.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/esp32/include/esp_sleep.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/esp32/include/esp_spiram.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/esp32/include/esp_ssc.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/esp32/include/rom/aes.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/esp32/include/rom/bigint.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/esp32/include/rom/cache.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/esp32/include/rom/crc.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/esp32/include/rom/efuse.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/esp32/include/rom/ets_sys.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/esp32/include/rom/gpio.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/esp32/include/rom/libc_stubs.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/esp32/include/rom/lldesc.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/esp32/include/rom/md5_hash.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/esp32/include/rom/miniz.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/esp32/include/rom/queue.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/esp32/include/rom/rtc.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/esp32/include/rom/secure_boot.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/esp32/include/rom/sha.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/esp32/include/rom/spi_flash.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/esp32/include/rom/tbconsole.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/esp32/include/rom/tjpgd.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/esp32/include/rom/uart.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/esp32/int_wdt.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/esp32/intr_alloc.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/esp32/ld/esp32.extram.bss.ld" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/esp32/ld/esp32.ld" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/esp32/ld/esp32.peripherals.ld" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/esp32/ld/esp32.project.ld.in" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/esp32/ld/esp32_fragments.lf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/esp32/lib/.gitlab-ci.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/esp32/lib/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/esp32/lib/README.rst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/esp32/lib/fix_printf.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/esp32/lib/libcoexist.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/esp32/lib/libcore.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/esp32/lib/libespnow.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/esp32/lib/libmesh.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/esp32/lib/libnet80211.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/esp32/lib/libphy.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/esp32/lib/libpp.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/esp32/lib/librtc.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/esp32/lib/libsmartconfig.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/esp32/lib/libwpa.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/esp32/lib/libwpa2.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/esp32/lib/libwps.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/esp32/linker.lf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/esp32/panic.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/esp32/pm_esp32.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/esp32/pm_trace.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/esp32/project_include.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/esp32/reset_reason.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/esp32/sdkconfig.rename" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/esp32/sleep_modes.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/esp32/spiram.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/esp32/spiram_psram.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/esp32/spiram_psram.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/esp32/system_api.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/esp32/task_wdt.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/esp_common/CMakeLists.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/esp_common/Kconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/esp_common/component.mk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/esp_common/include/esp_assert.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/esp_common/include/esp_bit_defs.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/esp_common/include/esp_err.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/esp_common/include/esp_freertos_hooks.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/esp_common/include/esp_idf_version.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/esp_common/include/esp_int_wdt.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/esp_common/include/esp_interface.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/esp_common/include/esp_ipc.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/esp_common/include/esp_pm.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/esp_common/include/esp_private/crosscore_int.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/esp_common/include/esp_private/dbg_stubs.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/esp_common/include/esp_private/esp_timer_impl.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/esp_common/include/esp_private/gdbstub.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/esp_common/include/esp_private/pm_impl.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/esp_common/include/esp_private/pm_trace.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/esp_common/include/esp_private/system_internal.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/esp_common/include/esp_system.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/esp_common/include/esp_task.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/esp_common/include/esp_task_wdt.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/esp_common/include/esp_timer.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/esp_common/include/esp_types.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/esp_common/sdkconfig.rename" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/esp_common/src/dbg_stubs.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/esp_common/src/esp_err_to_name.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/esp_common/src/esp_err_to_name.c.in" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/esp_common/src/esp_timer.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/esp_common/src/ets_timer_legacy.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/esp_common/src/freertos_hooks.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/esp_common/src/ipc.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/esp_common/src/pm_locks.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/esp_common/src/stack_check.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/esp_rom/CMakeLists.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/esp_rom/component.mk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/esp_rom/esp32/ld/esp32.rom.ld" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/esp_rom/esp32/ld/esp32.rom.libgcc.ld" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/esp_rom/esp32/ld/esp32.rom.newlib-data.ld" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/esp_rom/esp32/ld/esp32.rom.newlib-funcs.ld" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/esp_rom/esp32/ld/esp32.rom.newlib-locale.ld" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/esp_rom/esp32/ld/esp32.rom.newlib-nano.ld" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/esp_rom/esp32/ld/esp32.rom.redefined.ld" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/esp_rom/esp32/ld/esp32.rom.spiflash.ld" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/esp_rom/esp32/ld/esp32.rom.syscalls.ld" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/esp_rom/esp_rom.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/esp_rom/include/esp32/rom/aes.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/esp_rom/include/esp32/rom/bigint.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/esp_rom/include/esp32/rom/cache.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/esp_rom/include/esp32/rom/crc.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/esp_rom/include/esp32/rom/efuse.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/esp_rom/include/esp32/rom/ets_sys.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/esp_rom/include/esp32/rom/gpio.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/esp_rom/include/esp32/rom/libc_stubs.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/esp_rom/include/esp32/rom/lldesc.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/esp_rom/include/esp32/rom/md5_hash.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/esp_rom/include/esp32/rom/miniz.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/esp_rom/include/esp32/rom/rtc.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/esp_rom/include/esp32/rom/secure_boot.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/esp_rom/include/esp32/rom/sha.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/esp_rom/include/esp32/rom/spi_flash.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/esp_rom/include/esp32/rom/tbconsole.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/esp_rom/include/esp32/rom/tjpgd.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/esp_rom/include/esp32/rom/uart.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/freertos/CMakeLists.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/freertos/FreeRTOS-openocd.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/freertos/Kconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/freertos/component.mk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/freertos/croutine.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/freertos/event_groups.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/freertos/freertos/FreeRTOS.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/freertos/freertos/FreeRTOSConfig.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/freertos/freertos/StackMacros.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/freertos/freertos/croutine.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/freertos/freertos/deprecated_definitions.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/freertos/freertos/event_groups.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/freertos/freertos/list.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/freertos/freertos/mpu_wrappers.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/freertos/freertos/portable.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/freertos/freertos/portbenchmark.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/freertos/freertos/portmacro.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/freertos/freertos/porttrace.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/freertos/freertos/projdefs.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/freertos/freertos/queue.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/freertos/freertos/semphr.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/freertos/freertos/task.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/freertos/freertos/timers.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/freertos/freertos/xtensa_api.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/freertos/freertos/xtensa_config.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/freertos/freertos/xtensa_context.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/freertos/freertos/xtensa_rtos.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/freertos/freertos/xtensa_timer.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/freertos/license.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/freertos/linker.lf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/freertos/list.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/freertos/port.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/freertos/portasm.S" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/freertos/portmacro_priv.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/freertos/portmux_impl.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/freertos/portmux_impl.inc.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/freertos/queue.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/freertos/readme_xtensa.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/freertos/sdkconfig.rename" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/freertos/stdint.readme" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/freertos/tasks.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/freertos/timers.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/freertos/xtensa_context.S" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/freertos/xtensa_init.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/freertos/xtensa_intr.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/freertos/xtensa_intr_asm.S" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/freertos/xtensa_overlay_os_hook.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/freertos/xtensa_vector_defaults.S" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/freertos/xtensa_vectors.S" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/heap/CMakeLists.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/heap/Kconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/heap/component.mk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/heap/heap_caps.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/heap/heap_caps_init.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/heap/heap_private.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/heap/heap_task_info.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/heap/heap_trace_standalone.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/heap/include/esp_heap_alloc_caps.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/heap/include/esp_heap_caps.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/heap/include/esp_heap_caps_init.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/heap/include/esp_heap_task_info.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/heap/include/esp_heap_trace.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/heap/include/heap_trace.inc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/heap/include/multi_heap.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/heap/linker.lf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/heap/multi_heap.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/heap/multi_heap_config.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/heap/multi_heap_internal.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/heap/multi_heap_platform.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/heap/multi_heap_poisoning.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/heap/test/CMakeLists.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/heap/test/component.mk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/heap/test/test_heap_trace.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/heap/test/test_leak.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/heap/test/test_malloc.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/heap/test/test_malloc_caps.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/heap/test/test_realloc.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/heap/test/test_runtime_heap_reg.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/heap/test_multi_heap_host/Makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/heap/test_multi_heap_host/main.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/heap/test_multi_heap_host/test_all_configs.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/heap/test_multi_heap_host/test_multi_heap.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/log/CMakeLists.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/log/Kconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/log/README.rst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/log/component.mk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/log/include/esp_log.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/log/include/esp_log_internal.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/log/log.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/newlib/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/newlib/.gitmodules" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/newlib/CMakeLists.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/newlib/COPYING.NEWLIB" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/newlib/Kconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/newlib/Makefile.old" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/newlib/component.mk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/newlib/esp32-spiram-rom-functions-c.lf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/newlib/esp32-spiram-rom-functions-psram-workaround.lf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/newlib/heap.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/newlib/include/_ansi.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/newlib/include/_syslist.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/newlib/include/alloca.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/newlib/include/ar.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/newlib/include/argz.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/newlib/include/assert.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/newlib/include/complex.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/newlib/include/config.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/newlib/include/ctype.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/newlib/include/dirent.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/newlib/include/envlock.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/newlib/include/envz.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/newlib/include/errno.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/newlib/include/fastmath.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/newlib/include/fcntl.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/newlib/include/fenv.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/newlib/include/fnmatch.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/newlib/include/getopt.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/newlib/include/glob.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/newlib/include/grp.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/newlib/include/iconv.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/newlib/include/ieeefp.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/newlib/include/inttypes.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/newlib/include/langinfo.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/newlib/include/libgen.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/newlib/include/limits.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/newlib/include/locale.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/newlib/include/machine/_default_types.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/newlib/include/machine/_types.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/newlib/include/machine/ansi.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/newlib/include/machine/endian.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/newlib/include/machine/fastmath.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/newlib/include/machine/ieeefp.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/newlib/include/machine/malloc.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/newlib/include/machine/param.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/newlib/include/machine/setjmp-dj.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/newlib/include/machine/setjmp.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/newlib/include/machine/stdlib.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/newlib/include/machine/termios.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/newlib/include/machine/time.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/newlib/include/machine/types.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/newlib/include/malloc.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/newlib/include/math.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/newlib/include/newlib.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/newlib/include/paths.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/newlib/include/pthread.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/newlib/include/pwd.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/newlib/include/reent.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/newlib/include/regdef.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/newlib/include/regex.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/newlib/include/sched.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/newlib/include/search.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/newlib/include/setjmp.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/newlib/include/signal.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/newlib/include/spawn.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/newlib/include/stdatomic.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/newlib/include/stdint.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/newlib/include/stdio.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/newlib/include/stdio_ext.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/newlib/include/stdlib.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/newlib/include/string.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/newlib/include/strings.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/newlib/include/sys/_default_fcntl.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/newlib/include/sys/_intsup.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/newlib/include/sys/_types.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/newlib/include/sys/cdefs.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/newlib/include/sys/config.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/newlib/include/sys/custom_file.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/newlib/include/sys/dir.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/newlib/include/sys/errno.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/newlib/include/sys/fcntl.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/newlib/include/sys/features.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/newlib/include/sys/file.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/newlib/include/sys/iconvnls.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/newlib/include/sys/lock.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/newlib/include/sys/param.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/newlib/include/sys/queue.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/newlib/include/sys/reent.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/newlib/include/sys/resource.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/newlib/include/sys/sched.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/newlib/include/sys/signal.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/newlib/include/sys/stat.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/newlib/include/sys/stdio.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/newlib/include/sys/string.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/newlib/include/sys/syslimits.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/newlib/include/sys/time.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/newlib/include/sys/timeb.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/newlib/include/sys/times.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/newlib/include/sys/types.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/newlib/include/sys/unistd.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/newlib/include/sys/utime.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/newlib/include/sys/wait.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/newlib/include/tar.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/newlib/include/termios.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/newlib/include/tgmath.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/newlib/include/time.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/newlib/include/unctrl.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/newlib/include/unistd.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/newlib/include/utime.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/newlib/include/utmp.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/newlib/include/wchar.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/newlib/include/wctype.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/newlib/include/wordexp.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/newlib/include/xtensa/config/core-isa.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/newlib/lib/libc-psram-workaround.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/newlib/lib/libc.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/newlib/lib/libc_nano.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/newlib/lib/libg-psram-workaround.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/newlib/lib/libg.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/newlib/lib/libm-psram-workaround.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/newlib/lib/libm.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/newlib/locks.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/newlib/newlib.lf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/newlib/platform_include/assert.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/newlib/platform_include/errno.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/newlib/platform_include/esp_newlib.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/newlib/platform_include/net/if.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/newlib/platform_include/pthread.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/newlib/platform_include/sys/poll.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/newlib/platform_include/sys/random.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/newlib/platform_include/sys/select.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/newlib/platform_include/sys/termios.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/newlib/platform_include/sys/time.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/newlib/platform_include/sys/uio.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/newlib/platform_include/sys/un.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/newlib/platform_include/sys/unistd.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/newlib/platform_include/sys/utime.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/newlib/platform_include/time.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/newlib/poll.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/newlib/project_include.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/newlib/pthread.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/newlib/random.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/newlib/reent_init.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/newlib/select.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/newlib/syscall_table.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/newlib/syscalls.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/newlib/termios.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/newlib/time.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/newlib/utime.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/soc/CMakeLists.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/soc/component.mk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/soc/esp32/component.mk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/soc/esp32/cpu_util.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/soc/esp32/gpio_periph.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/soc/esp32/i2c_apll.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/soc/esp32/i2c_bbpll.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/soc/esp32/i2c_rtc_clk.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/soc/esp32/include/hal/spi_flash_ll.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/soc/esp32/include/soc/adc_channel.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/soc/esp32/include/soc/apb_ctrl_reg.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/soc/esp32/include/soc/apb_ctrl_struct.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/soc/esp32/include/soc/bb_reg.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/soc/esp32/include/soc/boot_mode.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/soc/esp32/include/soc/can_struct.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/soc/esp32/include/soc/clkout_channel.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/soc/esp32/include/soc/cpu.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/soc/esp32/include/soc/dac_channel.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/soc/esp32/include/soc/dport_access.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/soc/esp32/include/soc/dport_reg.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/soc/esp32/include/soc/efuse_reg.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/soc/esp32/include/soc/emac_ex_reg.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/soc/esp32/include/soc/emac_reg_v2.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/soc/esp32/include/soc/fe_reg.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/soc/esp32/include/soc/frc_timer_reg.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/soc/esp32/include/soc/gpio_pins.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/soc/esp32/include/soc/gpio_reg.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/soc/esp32/include/soc/gpio_sd_reg.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/soc/esp32/include/soc/gpio_sd_struct.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/soc/esp32/include/soc/gpio_sig_map.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/soc/esp32/include/soc/gpio_struct.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/soc/esp32/include/soc/hinf_reg.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/soc/esp32/include/soc/hinf_struct.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/soc/esp32/include/soc/host_reg.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/soc/esp32/include/soc/host_struct.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/soc/esp32/include/soc/hwcrypto_reg.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/soc/esp32/include/soc/i2c_reg.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/soc/esp32/include/soc/i2c_struct.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/soc/esp32/include/soc/i2s_reg.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/soc/esp32/include/soc/i2s_struct.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/soc/esp32/include/soc/io_mux_reg.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/soc/esp32/include/soc/ledc_reg.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/soc/esp32/include/soc/ledc_struct.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/soc/esp32/include/soc/mcpwm_reg.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/soc/esp32/include/soc/mcpwm_struct.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/soc/esp32/include/soc/nrx_reg.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/soc/esp32/include/soc/pcnt_reg.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/soc/esp32/include/soc/pcnt_struct.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/soc/esp32/include/soc/periph_defs.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/soc/esp32/include/soc/pid.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/soc/esp32/include/soc/rmt_reg.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/soc/esp32/include/soc/rmt_struct.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/soc/esp32/include/soc/rtc.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/soc/esp32/include/soc/rtc_cntl_reg.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/soc/esp32/include/soc/rtc_cntl_struct.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/soc/esp32/include/soc/rtc_gpio_channel.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/soc/esp32/include/soc/rtc_i2c_reg.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/soc/esp32/include/soc/rtc_io_reg.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/soc/esp32/include/soc/rtc_io_struct.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/soc/esp32/include/soc/sdio_slave_pins.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/soc/esp32/include/soc/sdmmc_pins.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/soc/esp32/include/soc/sdmmc_reg.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/soc/esp32/include/soc/sdmmc_struct.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/soc/esp32/include/soc/sens_reg.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/soc/esp32/include/soc/sens_struct.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/soc/esp32/include/soc/slc_reg.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/soc/esp32/include/soc/slc_struct.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/soc/esp32/include/soc/soc.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/soc/esp32/include/soc/soc_ulp.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/soc/esp32/include/soc/spi_caps.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/soc/esp32/include/soc/spi_reg.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/soc/esp32/include/soc/spi_struct.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/soc/esp32/include/soc/syscon_reg.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/soc/esp32/include/soc/syscon_struct.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/soc/esp32/include/soc/timer_group_reg.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/soc/esp32/include/soc/timer_group_struct.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/soc/esp32/include/soc/touch_channel.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/soc/esp32/include/soc/uart_caps.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/soc/esp32/include/soc/uart_channel.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/soc/esp32/include/soc/uart_reg.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/soc/esp32/include/soc/uart_struct.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/soc/esp32/include/soc/uhci_reg.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/soc/esp32/include/soc/uhci_struct.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/soc/esp32/include/soc/wdev_reg.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/soc/esp32/rtc_clk.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/soc/esp32/rtc_clk_common.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/soc/esp32/rtc_clk_init.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/soc/esp32/rtc_init.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/soc/esp32/rtc_periph.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/soc/esp32/rtc_pm.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/soc/esp32/rtc_sleep.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/soc/esp32/rtc_time.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/soc/esp32/rtc_wdt.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/soc/esp32/sdio_slave_periph.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/soc/esp32/sdmmc_periph.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/soc/esp32/soc_log.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/soc/esp32/soc_memory_layout.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/soc/esp32/sources.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/soc/esp32/spi_periph.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/soc/esp32/test/test_rtc_clk.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/soc/include/hal/esp_flash_err.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/soc/include/hal/hal_defs.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/soc/include/hal/readme.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/soc/include/hal/spi_flash_hal.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/soc/include/hal/spi_flash_types.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/soc/include/hal/spi_hal.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/soc/include/hal/spi_ll.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/soc/include/hal/spi_slave_hal.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/soc/include/hal/spi_types.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/soc/include/soc/adc_periph.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/soc/include/soc/can_periph.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/soc/include/soc/dac_periph.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/soc/include/soc/efuse_periph.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/soc/include/soc/emac_periph.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/soc/include/soc/gpio_periph.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/soc/include/soc/hwcrypto_periph.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/soc/include/soc/i2c_periph.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/soc/include/soc/i2s_periph.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/soc/include/soc/ledc_periph.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/soc/include/soc/lldesc.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/soc/include/soc/mcpwm_periph.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/soc/include/soc/pcnt_periph.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/soc/include/soc/rmt_periph.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/soc/include/soc/rtc_periph.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/soc/include/soc/rtc_wdt.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/soc/include/soc/sdio_slave_periph.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/soc/include/soc/sdmmc_periph.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/soc/include/soc/sens_periph.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/soc/include/soc/sigmadelta_periph.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/soc/include/soc/soc_memory_layout.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/soc/include/soc/spi_periph.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/soc/include/soc/syscon_periph.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/soc/include/soc/timer_periph.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/soc/include/soc/touch_periph.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/soc/include/soc/uart_periph.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/soc/linker.lf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/soc/src/hal/spi_flash_hal.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/soc/src/hal/spi_flash_hal_iram.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/soc/src/hal/spi_hal.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/soc/src/hal/spi_hal_iram.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/soc/src/hal/spi_slave_hal.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/soc/src/hal/spi_slave_hal_iram.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/soc/src/lldesc.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/soc/src/memory_layout_utils.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/soc/src/soc_include_legacy_warn.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/soc/test/CMakeLists.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/soc/test/component.mk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/spi_flash/CMakeLists.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/spi_flash/esp_spi_flash.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/spi_flash/sdkconfig.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/xtensa/CMakeLists.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/xtensa/component.mk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/xtensa/debug_helpers.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/xtensa/debug_helpers_asm.S" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/xtensa/eri.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/xtensa/esp32/include/xtensa/config/core-isa.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/xtensa/esp32/include/xtensa/config/core-matmap.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/xtensa/esp32/include/xtensa/config/core.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/xtensa/esp32/include/xtensa/config/defs.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/xtensa/esp32/include/xtensa/config/specreg.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/xtensa/esp32/include/xtensa/config/system.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/xtensa/esp32/include/xtensa/config/tie-asm.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/xtensa/esp32/include/xtensa/config/tie.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/xtensa/esp32/libhal.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/xtensa/include/eri.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/xtensa/include/esp_debug_helpers.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/xtensa/include/esp_panic.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/xtensa/include/esp_private/panic_reason.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/xtensa/include/trax.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/xtensa/include/xtensa-debug-module.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/xtensa/include/xtensa/cacheasm.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/xtensa/include/xtensa/cacheattrasm.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/xtensa/include/xtensa/core-macros.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/xtensa/include/xtensa/coreasm.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/xtensa/include/xtensa/corebits.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/xtensa/include/xtensa/hal.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/xtensa/include/xtensa/specreg.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/xtensa/include/xtensa/traxreg.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/xtensa/include/xtensa/xdm-regs.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/xtensa/include/xtensa/xt_perf_consts.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/xtensa/include/xtensa/xtensa-libdb-macros.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/xtensa/include/xtensa/xtensa-versions.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/xtensa/include/xtensa/xtensa-xer.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/xtensa/include/xtensa/xtruntime-core-state.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/xtensa/include/xtensa/xtruntime-frames.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/xtensa/include/xtensa/xtruntime.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/xtensa/linker.lf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/xtensa/trax.c" beforeDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
-    <ignored path="$PROJECT_DIR$/cmake-build-xtenza/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -123,213 +667,24 @@
     <option name="formatViaClangd" value="false" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="327">
-              <caret line="33" column="37" selection-start-line="33" selection-start-column="37" selection-end-line="33" selection-end-column="37" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/stubs/esp_rom/CMakeLists.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="132">
-              <caret line="6" column="29" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/stubs/heap/CMakeLists.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="88">
-              <caret line="4" column="32" selection-end-line="11" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/stubs/freertos/CMakeLists.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="22" column="102" selection-start-line="22" selection-start-column="102" selection-end-line="22" selection-end-column="102" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/stubs/esp_common/CMakeLists.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
-              <caret line="13" column="59" selection-start-line="13" selection-start-column="59" selection-end-line="13" selection-end-column="59" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/stubs/soc/CMakeLists.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="132">
-              <caret line="6" column="9" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/stubs/esp32/CMakeLists.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="261">
-              <caret line="30" column="32" selection-start-line="30" selection-start-column="32" selection-end-line="30" selection-end-column="32" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/stubs/freertos/freertos/FreeRTOSConfig.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="74" selection-start-line="74" selection-end-line="74" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/stubs/spi_flash/sdkconfig.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="383">
-              <caret line="265" column="45" selection-start-line="265" selection-start-column="45" selection-end-line="265" selection-end-column="45" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/stubs/xtensa/CMakeLists.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="9" column="28" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>AP</find>
-      <find>CONFIG_FREERTOS_MAX_TASK_NAME_LEN</find>
-      <find>sdkco</find>
-      <find>FREERTOS_CONFIG_H</find>
-      <find>test_</find>
-      <find>test_fatf</find>
-      <find>test</find>
-      <find>test_fat</find>
-      <find>rsil</find>
-      <find>XTOS_SET_INTLEVEL</find>
-      <find>error</find>
-      <find>test_utils.h</find>
-      <find>ENOTSOCK</find>
-      <find>app_update</find>
-      <find>compon</find>
-      <find>heap</find>
-      <find>esp32</find>
-      <find>MAX_TASK_NAME_LEN</find>
-    </findStrings>
-    <replaceStrings>
-      <replace>esp_rom</replace>
-      <replace>esp_common</replace>
-    </replaceStrings>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/src/lib/components/freertos/include/freertos/FreeRTOSConfig.h" />
-        <option value="$PROJECT_DIR$/src/lib/components/app_trace/sys_view/Sample/Config/SEGGER_SYSVIEW_Config_FreeRTOS.c" />
-        <option value="$PROJECT_DIR$/src/lib/components/soc/esp32/include/soc/soc.h" />
-        <option value="$PROJECT_DIR$/src/lib/components/freertos/include/freertos/portmacro.h" />
-        <option value="$PROJECT_DIR$/src/lib/components/freertos/include/freertos/portable.h" />
-        <option value="$PROJECT_DIR$/src/definitions.hpp" />
-        <option value="$PROJECT_DIR$/stubs/log/log.c" />
-        <option value="$PROJECT_DIR$/stubs/freertos/freertos/FreeRTOS.h" />
-        <option value="$PROJECT_DIR$/stubs/log/CMakeLists.txt" />
-        <option value="$PROJECT_DIR$/stubs/heap/CMakeLists.txt" />
-        <option value="$PROJECT_DIR$/stubs/newlib/CMakeLists.txt" />
-        <option value="$PROJECT_DIR$/stubs/spi_flash/CMakeLists.txt" />
-        <option value="$PROJECT_DIR$/stubs/esp_rom/CMakeLists.txt" />
-        <option value="$PROJECT_DIR$/stubs/xtensa/CMakeLists.txt" />
-        <option value="$PROJECT_DIR$/CMakeLists.txt" />
-        <option value="$PROJECT_DIR$/stubs/freertos/CMakeLists.txt" />
-        <option value="$PROJECT_DIR$/stubs/soc/CMakeLists.txt" />
-        <option value="$PROJECT_DIR$/stubs/esp_common/CMakeLists.txt" />
-        <option value="$PROJECT_DIR$/stubs/spi_flash/sdkconfig.h" />
-        <option value="$PROJECT_DIR$/stubs/esp32/CMakeLists.txt" />
-      </list>
-    </option>
-  </component>
   <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="1914" />
-    <option name="width" value="1932" />
-    <option name="height" value="1086" />
-  </component>
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="obyte_cpp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="obyte-cpp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="obyte_cpp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="obyte-cpp" type="462c0819:PsiDirectoryNode" />
-              <item name="stubs" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="obyte_cpp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="obyte-cpp" type="462c0819:PsiDirectoryNode" />
-              <item name="stubs" type="462c0819:PsiDirectoryNode" />
-              <item name="esp32" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="obyte_cpp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="obyte-cpp" type="462c0819:PsiDirectoryNode" />
-              <item name="stubs" type="462c0819:PsiDirectoryNode" />
-              <item name="esp_common" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="obyte_cpp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="obyte-cpp" type="462c0819:PsiDirectoryNode" />
-              <item name="stubs" type="462c0819:PsiDirectoryNode" />
-              <item name="spi_flash" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope" />
-    </panes>
-  </component>
+  <component name="ProjectId" id="1OrMVw2XvzpOnc3qeWE3giKG2J5" />
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="CMakeSettings" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -348,69 +703,12 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="CMake Application.obyte_cpp.elf">
-    <configuration name="obyte_cpp.elf" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="obyte_cpp" TARGET_NAME="obyte_cpp.elf" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="obyte_cpp" RUN_TARGET_NAME="obyte_cpp.elf">
+  <component name="RunManager">
+    <configuration name="obyte_cpp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="obyte_cpp" TARGET_NAME="obyte_cpp" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="obyte_cpp" RUN_TARGET_NAME="obyte_cpp">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="stub_esp32" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="obyte_cpp" TARGET_NAME="stub_esp32" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="stub_esp_common" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="obyte_cpp" TARGET_NAME="stub_esp_common" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="stub_esp_rom" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="obyte_cpp" TARGET_NAME="stub_esp_rom" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="stub_freertos" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="obyte_cpp" TARGET_NAME="stub_freertos" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="stub_heap" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="obyte_cpp" TARGET_NAME="stub_heap" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="stub_log" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="obyte_cpp" TARGET_NAME="stub_log" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="stub_newlib" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="obyte_cpp" TARGET_NAME="stub_newlib" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="stub_soc" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="obyte_cpp" TARGET_NAME="stub_soc" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="stub_xtensa" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="obyte_cpp" TARGET_NAME="stub_xtensa" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <list>
-      <item itemvalue="CMake Application.obyte_cpp.elf" />
-      <item itemvalue="CMake Application.stub_esp32" />
-      <item itemvalue="CMake Application.stub_esp_common" />
-      <item itemvalue="CMake Application.stub_esp_rom" />
-      <item itemvalue="CMake Application.stub_freertos" />
-      <item itemvalue="CMake Application.stub_heap" />
-      <item itemvalue="CMake Application.stub_log" />
-      <item itemvalue="CMake Application.stub_newlib" />
-      <item itemvalue="CMake Application.stub_soc" />
-      <item itemvalue="CMake Application.stub_xtensa" />
-    </list>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -427,61 +725,35 @@
       <workItem from="1561653324952" duration="1984000" />
       <workItem from="1561719377536" duration="6586000" />
       <workItem from="1561725860472" duration="20820000" />
+      <workItem from="1563866055279" duration="6508000" />
+      <workItem from="1563952950695" duration="387000" />
+      <workItem from="1563953537548" duration="5421000" />
+      <workItem from="1563977050396" duration="4851000" />
+      <workItem from="1564469200721" duration="1113000" />
+      <workItem from="1564556130125" duration="6060000" />
+      <workItem from="1564572555406" duration="1180000" />
+      <workItem from="1564728795343" duration="456000" />
+      <workItem from="1564729484365" duration="613000" />
+      <workItem from="1564730321292" duration="101000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31672000" />
-  </component>
-  <component name="ToolWindowManager">
-    <frame x="1914" y="0" width="1932" height="1086" extended-state="6" />
-    <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26533908" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32967034" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Database Changes" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" />
-      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="10" />
-      <window_info anchor="bottom" id="CMake" order="11" weight="0.30879122" />
-      <window_info active="true" anchor="bottom" id="Messages" order="12" visible="true" weight="0.43296704" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Database" order="3" />
-    </layout>
-    <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26533908" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32967034" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Database Changes" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" />
-      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="10" />
-      <window_info anchor="bottom" id="CMake" order="11" weight="0.30879122" />
-      <window_info anchor="bottom" id="Messages" order="12" visible="true" weight="0.43296704" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Database" order="3" />
-    </layout-to-restore>
+    <option name="totallyTimeSpent" value="58362000" />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -493,191 +765,12 @@
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
-  </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/lib/components/freertos/tasks.c" />
-    <entry file="file://$PROJECT_DIR$/src/lib/components/freertos/include/freertos/FreeRTOS.h" />
-    <entry file="file://$PROJECT_DIR$/src/lib/components/freertos/include/freertos/FreeRTOSConfig.h" />
-    <entry file="file://$PROJECT_DIR$/src/lib/components/freertos/include/freertos/sdkconfig.h" />
-    <entry file="file://$PROJECT_DIR$/src/lib/components/fatfs/test_fatfs_host/sdkconfig/sdkconfig.h" />
-    <entry file="file://$PROJECT_DIR$/src/lib/components/nghttp/nghttp2/third-party/mruby/Makefile" />
-    <entry file="file:///usr/include/x86_64-linux-gnu/c++/8/bits/os_defines.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="81">
-          <caret line="43" column="18" selection-start-line="43" selection-start-column="18" selection-end-line="43" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/lib/components/freertos/include/freertos/portmacro.h" />
-    <entry file="file://$PROJECT_DIR$/src/lib/components/freertos/include/freertos/portable.h" />
-    <entry file="file://$PROJECT_DIR$/src/lib/components/app_trace/sys_view/Sample/Config/SEGGER_SYSVIEW_Config_FreeRTOS.c" />
-    <entry file="file://$PROJECT_DIR$/src/lib/components/newlib/include/sys/errno.h" />
-    <entry file="file:///usr/include/x86_64-linux-gnu/c++/8/bits/error_constants.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2420">
-          <caret line="111" column="36" selection-start-line="111" selection-start-column="36" selection-end-line="111" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/lib/components/soc/esp32/include/soc/soc.h" />
-    <entry file="file://$PROJECT_DIR$/src/byteduino.hpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="16" column="22" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/definitions.hpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="2" column="30" selection-start-line="2" selection-start-column="30" selection-end-line="2" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/stubs/soc/src/memory_layout_utils.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="18" column="21" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/stubs/freertos/freertos/task.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="109">
-          <caret line="74" selection-start-line="74" selection-end-line="74" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/stubs/freertos/task.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/stubs/freertos/freertos/mpu_wrappers.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-668">
-          <caret line="77" column="29" selection-start-line="77" selection-start-column="29" selection-end-line="77" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/stubs/log/log.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="7" column="2" selection-start-line="7" selection-start-column="2" selection-end-line="7" selection-end-column="2" />
-          <folding>
-            <element signature="e#1709#1739#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/stubs/freertos/freertos/FreeRTOS.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="76" selection-start-line="76" selection-end-line="76" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/stubs/newlib/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="19" column="66" selection-start-line="19" selection-start-column="66" selection-end-line="19" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/stubs/spi_flash/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="1" column="54" selection-start-line="1" selection-start-column="54" selection-end-line="1" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/stubs/esp32/esp32/rom/ets_sys.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="1" column="30" selection-start-line="1" selection-start-column="30" selection-end-line="1" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/stubs/log/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/stubs/esp_rom/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="6" column="29" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/stubs/xtensa/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="9" column="28" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="327">
-          <caret line="33" column="37" selection-start-line="33" selection-start-column="37" selection-end-line="33" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/stubs/freertos/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="22" column="102" selection-start-line="22" selection-start-column="102" selection-end-line="22" selection-end-column="102" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/stubs/soc/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="6" column="9" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/stubs/esp_common/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="13" column="59" selection-start-line="13" selection-start-column="59" selection-end-line="13" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/stubs/freertos/freertos/FreeRTOSConfig.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="74" selection-start-line="74" selection-end-line="74" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/stubs/spi_flash/sdkconfig.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="383">
-          <caret line="265" column="45" selection-start-line="265" selection-start-column="45" selection-end-line="265" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/stubs/heap/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="4" column="32" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/stubs/esp32/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="30" column="32" selection-start-line="30" selection-start-column="32" selection-end-line="30" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
+    <watches-manager>
+      <configuration name="CMakeRunConfiguration">
+        <watch expression="object[key]" language="ObjectiveC" />
+        <watch expression="object" language="ObjectiveC" />
+        <watch expression="object" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>

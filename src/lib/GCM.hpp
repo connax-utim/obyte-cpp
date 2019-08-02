@@ -26,6 +26,7 @@
 #include "AuthenticatedCipher.hpp"
 #include "BlockCipher.hpp"
 #include "GHASH.hpp"
+#include "AES.hpp"
 
 class GCMCommon : public AuthenticatedCipher
 {
